@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FASTSporty AI - Smart Predictions. Real Sports.</title>
-  <meta name="description" content="Plateforme nouvelle génération de pronostics sportifs alimentée par l'IA. Coupons de paris VIP, cotes en direct et analyses haute fidélité." />
+  <meta name="description"
+    content="Plateforme nouvelle génération de pronostics sportifs alimentée par l'IA. Coupons de paris VIP, cotes en direct et analyses haute fidélité." />
+  <link rel="icon" type="image/png" href="/logo.png?v=3" />
 
   <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,900&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Phosphor Icons Official Web Fonts -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/fill/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/duotone/style.css" />
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="./src/style.css" />
 </head>
+
 <body>
 
-  <!-- Background Organic Fluid Neon Ambient Layer (100% sans étoiles/points, 100% lueur fluide) -->
+  <!-- Néon Sombre Localisé en Déplacement (Non étalé sur toute la page) -->
   <div class="neon-ambient-layer" aria-hidden="true">
-    <div class="ambient-blob blob-1"></div>
-    <div class="ambient-blob blob-2"></div>
-    <div class="ambient-blob blob-3"></div>
-    <div class="ambient-blob blob-4"></div>
-    <div class="ambient-blob blob-5"></div>
-    <div class="neon-mesh-glow"></div>
-    <div class="light-streak streak-1"></div>
-    <div class="light-streak streak-2"></div>
+    <div class="neon-traveling-orb"></div>
+    <div class="neon-traveling-satellite"></div>
+    <div class="neon-traveling-streak"></div>
   </div>
 
   <!-- ==========================================================================
@@ -34,7 +45,7 @@
        ========================================================================== -->
   <aside id="preloader" aria-label="Page de chargement">
     <div class="loader-stage">
-      
+
       <!-- Bouncing Soccer Ball Animation -->
       <div class="bouncing-ball-wrapper">
         <div class="soccer-ball" id="bouncing-soccer-ball" title="Ballon rebondissant FASTSporty">
@@ -42,19 +53,19 @@
             <!-- Classic Soccer Pentagon Pattern in SVG -->
             <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <!-- Center Pentagon -->
-              <polygon points="50,32 64,42 59,58 41,58 36,42" fill="#2A0E9E" stroke="#7C4DFF" stroke-width="2"/>
+              <polygon points="50,32 64,42 59,58 41,58 36,42" fill="#2A0E9E" stroke="#7C4DFF" stroke-width="2" />
               <!-- Radiating Seam Lines & Neighboring Patches -->
-              <line x1="50" y1="32" x2="50" y2="14" stroke="#7C4DFF" stroke-width="2"/>
-              <line x1="64" y1="42" x2="80" y2="40" stroke="#7C4DFF" stroke-width="2"/>
-              <line x1="59" y1="58" x2="72" y2="74" stroke="#7C4DFF" stroke-width="2"/>
-              <line x1="41" y1="58" x2="28" y2="74" stroke="#7C4DFF" stroke-width="2"/>
-              <line x1="36" y1="42" x2="20" y2="40" stroke="#7C4DFF" stroke-width="2"/>
+              <line x1="50" y1="32" x2="50" y2="14" stroke="#7C4DFF" stroke-width="2" />
+              <line x1="64" y1="42" x2="80" y2="40" stroke="#7C4DFF" stroke-width="2" />
+              <line x1="59" y1="58" x2="72" y2="74" stroke="#7C4DFF" stroke-width="2" />
+              <line x1="41" y1="58" x2="28" y2="74" stroke="#7C4DFF" stroke-width="2" />
+              <line x1="36" y1="42" x2="20" y2="40" stroke="#7C4DFF" stroke-width="2" />
               <!-- Edge Patches -->
-              <polygon points="50,14 40,6 60,6" fill="#140C3A" stroke="#7C4DFF" stroke-width="2"/>
-              <polygon points="80,40 92,28 92,52" fill="#140C3A" stroke="#7C4DFF" stroke-width="2"/>
-              <polygon points="72,74 86,84 62,94" fill="#140C3A" stroke="#7C4DFF" stroke-width="2"/>
-              <polygon points="28,74 38,94 14,84" fill="#140C3A" stroke="#7C4DFF" stroke-width="2"/>
-              <polygon points="20,40 8,52 8,28" fill="#140C3A" stroke="#7C4DFF" stroke-width="2"/>
+              <polygon points="50,14 40,6 60,6" fill="#140C3A" stroke="#7C4DFF" stroke-width="2" />
+              <polygon points="80,40 92,28 92,52" fill="#140C3A" stroke="#7C4DFF" stroke-width="2" />
+              <polygon points="72,74 86,84 62,94" fill="#140C3A" stroke="#7C4DFF" stroke-width="2" />
+              <polygon points="28,74 38,94 14,84" fill="#140C3A" stroke="#7C4DFF" stroke-width="2" />
+              <polygon points="20,40 8,52 8,28" fill="#140C3A" stroke="#7C4DFF" stroke-width="2" />
             </svg>
           </div>
         </div>
@@ -68,16 +79,7 @@
 
       <!-- Brand Logo on Preloader -->
       <div class="preloader-brand">
-        <div class="brand-icon-svg">
-          <svg width="34" height="26" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 6L28 6L23 12L0 12L4 6Z" fill="#5B2BE0" />
-            <path d="M9 14L33 14L28 20L5 20L9 14Z" fill="#7C4DFF" />
-            <path d="M14 22L38 22L33 28L10 28L14 22Z" fill="#B07CFF" />
-          </svg>
-        </div>
-        <div class="brand-logo-text">
-          <span class="brand-fast">FAST</span><span class="brand-sporty">Sporty</span><span class="brand-ai">AI</span>
-        </div>
+        <img src="/logo.png?v=3" alt="FAST Sporty" class="preloader-logo-img" />
       </div>
       <div class="brand-subtitle">SMART PREDICTIONS. REAL SPORTS.</div>
 
@@ -99,1212 +101,1589 @@
   <!-- ==========================================================================
        HEADER & NAVIGATION BAR
        ========================================================================== -->
-  <header class="site-header">
-    <!-- Brand Logo -->
-    <a href="#" class="nav-brand">
-      <div class="brand-icon-svg">
-        <svg width="36" height="26" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4 6L28 6L23 12L0 12L4 6Z" fill="#5B2BE0" />
-          <path d="M9 14L33 14L28 20L5 20L9 14Z" fill="#7C4DFF" />
-          <path d="M14 22L38 22L33 28L10 28L14 22Z" fill="#B07CFF" />
-        </svg>
-      </div>
-      <div class="brand-logo-text">
-        <span class="brand-fast">FAST</span><span class="brand-sporty">Sporty</span><span class="brand-ai">AI</span>
-      </div>
-    </a>
+  <!-- ==========================================================================
+       HEADER & NAVIGATION BAR MODERNE & AÉRÉE
+       - Fini les textes entassés : navigation élégante, moderne et spacieuse
+       - Bouton Hamburger lumineux pour coulisser la Slide Bar (Barre Latérale)
+       - Barre de recherche rapide de clubs / matchs / ligues
+       - Puces rapides pour les disciplines populaires
+       - Accès Telegram VIP & Switcher Utilisateur / Admin
+       ========================================================================== -->
+  <!-- ==========================================================================
+       SIDE DRAWER (MENU LATÉRAL MOBILE & MOTION DESIGN FAST SPORTY AI)
+       - Glisse depuis la GAUCHE : translateX(-100% -> 0)
+       - Voile sombre avec flou d'arrière-plan
+       - En-tête profil dynamique, liens de navigation, communauté, compte, aide
+       ========================================================================== -->
+  <div id="side-drawer-backdrop" class="side-drawer-backdrop" aria-hidden="true"></div>
+  <aside id="app-side-drawer" class="side-drawer" aria-label="Menu latéral FASTSporty AI" aria-hidden="true"
+    role="dialog" aria-modal="true"></aside>
 
-    <!-- Navigation links -->
-    <nav aria-label="Navigation principale">
-      <ul class="nav-links">
-        <li><a href="#accueil" class="active">Accueil</a></li>
-        <li><a href="#live-matches-section">⚡ Direct & Cotes</a></li>
-        <li><a href="#coupons-section">🎫 Coupons VIP</a></li>
-        <li><a href="#transparency-section">📊 Bilan Certifié</a></li>
-        <li><a href="#match-analysis-section">🎯 Choc H2H</a></li>
-        <li><a href="#bankroll-calc-section">💰 Simulateur</a></li>
-        <li><a href="#pricing-section">💎 Pass VIP</a></li>
-        <li><a href="#faq-section">❓ FAQ</a></li>
-      </ul>
-    </nav>
-
-    <!-- Header Actions -->
-    <div class="nav-actions">
-      <!-- Portal Switcher Toggle -->
-      <div class="portal-switcher" title="Basculer entre Portail Utilisateur et Administrateur">
-        <button class="portal-btn active" id="portal-switch-user">
-          <span>👤 Utilisateur</span>
-        </button>
-        <button class="portal-btn" id="portal-switch-admin">
-          <span>⚙️ Admin</span>
-        </button>
-      </div>
-
-      <!-- Connexion Button (Opens the exact mockup modal) -->
-      <button class="btn-neon-primary" data-action="open-auth" data-mode="login">
-        <span>Connexion</span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M5 12h14"></path>
-          <path d="m12 5 7 7-7 7"></path>
-        </svg>
+  <header class="site-header" id="site-header">
+    <!-- Left: Hamburger (3 bars) + Brand Logo -->
+    <div class="header-left-zone">
+      <!-- 3 bars hamburger button on the LEFT that opens the drawer with profile + navigation -->
+      <button class="sidebar-toggle-btn header-drawer-btn" id="sidebar-toggle-btn" aria-label="Menu latéral et Profil"
+        aria-expanded="false" aria-controls="app-side-drawer" title="Menu & Profil">
+        <span class="toggle-icon-wrap">
+          <i class="ph-bold ph-list toggle-menu-icon" aria-hidden="true"></i>
+        </span>
+        <span class="user-neon-status-dot" id="header-user-status-dot" aria-hidden="true"></span>
       </button>
+
+      <a href="#" class="nav-brand" aria-label="FAST Sporty Accueil">
+        <img src="/logo.png?v=3" alt="FAST Sporty" class="brand-logo-img" />
+      </a>
+    </div>
+
+    <!-- Center: Search bar (takes remaining space) + ONLY ONE pill "Coupon VIP" -->
+    <div class="header-center-zone">
+      <div class="header-search-container">
+        <span class="header-search-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+          </svg>
+        </span>
+        <input type="text" id="header-quick-search" class="header-search-input"
+          placeholder="Rechercher un club, un match, une ligue..." data-i18n-placeholder="nav.search_placeholder"
+          autocomplete="off" />
+        <span class="search-kbd-tag"><i class="ph-bold ph-magnifying-glass" style="font-size:11px;"></i></span>
+      </div>
+
+      <div class="header-quick-links">
+        <a href="#coupons-section" class="hdr-quick-pill highlight">
+          <i class="ph-bold ph-ticket"></i>
+          <span data-i18n="nav.coupon_vip">Coupon VIP</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Header Actions -->
+    <div class="nav-actions">
+      <!-- Gift Icon: opens "Claim your welcome gift" modal -->
+      <button class="nav-gift-btn" id="nav-gift-btn" aria-label="Cadeau de bienvenue"
+        title="Réclamez votre cadeau de bienvenue !" data-i18n-title="nav.gift_tooltip">
+        <i class="ph-bold ph-gift"></i>
+        <span class="nav-gift-pulse-dot" id="nav-gift-pulse-dot"></span>
+      </button>
+
+      <!-- Language switch: "FR | EN" toggle -->
+      <button class="lang-toggle-btn" id="nav-lang-toggle-btn" aria-label="Changer de langue"
+        title="Switch language (FR / EN)">
+        <i class="ph-bold ph-translate"></i>
+        <span class="lang-current-label" id="lang-current-label">FR</span>
+      </button>
+
+      <!-- Auth buttons (when logged out: Connexion outline + Inscription solid) -->
+      <div class="nav-auth-group" id="nav-auth-group">
+        <button class="btn-auth-outline" data-action="open-auth" data-mode="login">
+          <span data-i18n="nav.login">Connexion</span>
+        </button>
+        <button class="btn-auth-solid" data-action="open-auth" data-mode="register">
+          <span data-i18n="nav.signup">Inscription</span>
+        </button>
+      </div>
+
+      <!-- User Chip (when logged in: avatar + username + plan pill + logout button) -->
+      <div class="nav-user-logged" id="nav-user-logged" style="display: none;">
+        <button class="btn-user-chip" id="hdr-user-chip-btn" title="Voir mon profil">
+          <span class="user-chip-avatar" id="hdr-user-initials">U</span>
+          <span class="user-chip-name" id="hdr-user-name">Mon Compte</span>
+          <span class="user-chip-badge" id="hdr-user-plan">Gratuit</span>
+        </button>
+        <button class="btn-user-logout" id="hdr-user-logout-btn" title="Se déconnecter" aria-label="Se déconnecter">
+          <i class="ph-bold ph-sign-out"></i>
+        </button>
+      </div>
     </div>
   </header>
 
   <!-- ==========================================================================
-       MAIN CONTENT: PORTAIL UTILISATEUR
+       APP LAYOUT CONTENANT LA SLIDE BAR (SIDEBAR) & LE CONTENU PRINCIPAL
        ========================================================================== -->
-  <main id="user-portal-view">
-    
-    <!-- Hero Section -->
-    <section class="hero-section" id="accueil">
-      <!-- Carrousel Central Type 1xBet (Objectif 2) -->
-      <div id="hero-banner-carousel" class="hero-banner-carousel-container" aria-roledescription="carousel" aria-label="Bannières et coupons du jour FASTSporty"></div>
-
-
-      <!-- Hero Stats Bar -->
-      <div class="hero-stats-bar" id="stats-section">
-        <div class="stat-card">
-          <div class="stat-number accent">87.4%</div>
-          <div class="stat-label">Taux de réussite vérifié</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">+3,450</div>
-          <div class="stat-label">Membres VIP actifs</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number accent">x4.8</div>
-          <div class="stat-label">ROI Moyen mensuel</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">24/7</div>
-          <div class="stat-label">Flux de cotes en direct</div>
-        </div>
-      </div>
-    </section>
+  <div class="app-layout" id="app-layout">
+    <!-- Backdrop for mobile/tablet sliding drawer -->
+    <div class="app-sidebar-backdrop" id="app-sidebar-backdrop"></div>
 
     <!-- ==========================================================================
-         CAROUSEL: COTES ET MATCHS DU JOUR
+         SLIDE BAR (BARRE LATÉRALE SPORTIVE)
+         - Style Bookmaker / Flashscore avec liseré néon violet
+         - Sections : Navigation, Top Compétitions API, Disciplines, Carte VIP, Statut
+         - Coulissante avec bouton toggle et pliable/dépliable
          ========================================================================== -->
-    <section class="section-wrapper" id="matches-section">
-      <div class="section-head">
-        <div>
-          <h2 class="section-title">
-            <span>🔥</span> Cotes & Matchs Chauds du Jour
-          </h2>
-          <p class="section-subtitle">
-            Analyse algorithmique en temps réel des chocs européens majeurs avec cotes optimisées.
-          </p>
-        </div>
-        <div class="carousel-controls">
-          <button class="carousel-arrow" id="carousel-prev-btn" aria-label="Match précédent">‹</button>
-          <button class="carousel-arrow" id="carousel-next-btn" aria-label="Match suivant">›</button>
-        </div>
-      </div>
-
-      <div class="carousel-viewport">
-        <div class="carousel-track" id="matches-carousel-track">
-          <!-- Populated dynamically via src/components/carousel.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         NOUVELLE SECTION : MATCHS EN DIRECT & COTES OFFICIELLES (API-SPORTS)
-         Véritables logos d'équipes, scores en direct, statut et cotes interactives
-         ========================================================================== -->
-    <section class="section-wrapper" id="live-matches-section">
-      <div class="section-head">
-        <div>
-          <div class="section-badge-pill">
-            <span class="live-dot-pulse"></span> FLUX API-SPORTS EN TEMPS RÉEL
+    <aside class="app-sidebar" id="app-sidebar" aria-label="Menu latéral FASTSporty AI">
+      <!-- Sidebar Top Bar -->
+      <!-- Sidebar Top Bar: Bouton Profil & Forfait remplaçant le texte statique -->
+      <div class="sidebar-header-box">
+        <button class="sidebar-profile-card-btn" id="sidebar-profile-card-btn" aria-label="Mon Profil et Abonnements"
+          title="Ouvrir mon profil et forfait">
+          <div class="sidebar-profile-avatar-wrap">
+            <span class="sidebar-avatar-initials" id="sidebar-avatar-initials"><i class="ph-bold ph-user"></i></span>
+            <span class="sidebar-status-online" id="sidebar-status-online"></span>
           </div>
-          <h2 class="section-title">
-            <span>⚡</span> Cotes Officielles & Matchs du Jour
-          </h2>
-          <p class="section-subtitle">
-            Scores en direct, minutes de jeu, logos officiels des clubs et cotes 1X2 actualisées en direct. Cliquez sur une cote pour l'ajouter à votre bordereau.
-          </p>
+          <div class="sidebar-profile-meta">
+            <span class="sidebar-profile-name" id="sidebar-profile-name">Non connecté</span>
+            <span class="sidebar-profile-plan" id="sidebar-profile-plan">Connexion / Inscription</span>
+          </div>
+          <i class="ph-bold ph-caret-right sidebar-profile-arrow"></i>
+        </button>
+        <button class="sidebar-collapse-btn" id="sidebar-collapse-btn" title="Réduire / Agrandir la barre latérale">
+          <svg class="chevron-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m15 18-6-6 6-6" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Scrollable Inner Content -->
+      <div class="sidebar-scroll-container">
+
+        <!-- Section 1 : Navigation Rapide -->
+        <div class="sidebar-section-block">
+          <div class="sidebar-section-header">NAVIGATION RAPIDE</div>
+          <ul class="sidebar-nav-menu">
+            <li class="sidebar-nav-entry active" data-nav="accueil">
+              <a href="#accueil" class="sidebar-nav-anchor">
+                <span class="entry-icon"><i class="ph-bold ph-house"></i></span>
+                <span class="entry-text">Accueil</span>
+              </a>
+            </li>
+            <li class="sidebar-nav-entry" data-nav="live-matches">
+              <a href="#live-matches-section" class="sidebar-nav-anchor">
+                <span class="entry-icon"><i class="ph-bold ph-brain"></i></span>
+                <span class="entry-text">Analyses Prédictives IA</span>
+                <span class="entry-badge badge-pulse-live">IA LIVE</span>
+              </a>
+            </li>
+            <li class="sidebar-nav-entry" data-nav="coupons">
+              <a href="#coupons-section" class="sidebar-nav-anchor">
+                <span class="entry-icon"><i class="ph-bold ph-ticket"></i></span>
+                <span class="entry-text">Coupons VIP & IA</span>
+                <span class="entry-badge badge-vip-gold">VIP</span>
+              </a>
+            </li>
+            <li class="sidebar-nav-entry" data-nav="transparency">
+              <a href="#transparency-section" class="sidebar-nav-anchor">
+                <span class="entry-icon"><i class="ph-bold ph-chart-bar"></i></span>
+                <span class="entry-text">Bilan Certifié</span>
+                <span class="entry-badge badge-stat-green">+28.7%</span>
+              </a>
+            </li>
+            <li class="sidebar-nav-entry" data-nav="h2h">
+              <a href="#match-analysis-section" class="sidebar-nav-anchor">
+                <span class="entry-icon"><i class="ph-bold ph-target"></i></span>
+                <span class="entry-text">Choc H2H Européen</span>
+              </a>
+            </li>
+            <li class="sidebar-nav-entry" data-nav="pricing">
+              <a href="#pricing-section" class="sidebar-nav-anchor">
+                <span class="entry-icon"><i class="ph-bold ph-crown"></i></span>
+                <span class="entry-text">Formules d'Abonnement</span>
+                <span class="entry-badge badge-counter-purple">3 OFFRES</span>
+              </a>
+            </li>
+            <li class="sidebar-nav-entry" data-nav="live-tracking">
+              <a href="#live-tracking-section" class="sidebar-nav-anchor">
+                <span class="entry-icon"><i class="ph-bold ph-broadcast"></i></span>
+                <span class="entry-text">Suivi Algorithme Live</span>
+                <span class="entry-badge badge-counter-purple">xG PRO</span>
+              </a>
+            </li>
+            <li class="sidebar-nav-entry" data-nav="faq">
+              <a href="#faq-section" class="sidebar-nav-anchor">
+                <span class="entry-icon"><i class="ph-bold ph-question"></i></span>
+                <span class="entry-text">Centre d'aide & FAQ</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="section-controls-row">
-          <button class="btn-refresh-live" id="live-refresh-btn" title="Rafraîchir les flux API-Sports">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 2v6h-6M3 12a9 9 0 0 1 15-6.7L21 8M3 22v-6h6M21 12a9 9 0 0 1-15 6.7L3 16"/></svg>
-            <span>Actualiser le direct</span>
+
+        <!-- Section 2 : Catégories de Coupons IA -->
+        <div class="sidebar-section-block">
+          <div class="sidebar-section-header">CATÉGORIES DE COUPONS IA</div>
+          <ul class="sidebar-coupon-categories-list">
+            <li class="coupon-category-row-item" data-category-filter="safe">
+              <a href="#coupons-section" class="coupon-category-anchor">
+                <span class="category-icon-box"><i class="ph-fill ph-shield-check" style="color: #22E5A0;"></i></span>
+                <div class="category-info-col">
+                  <span class="category-title">SAFE 90%+</span>
+                  <span class="category-sub">Cotes fiables & sécurisées</span>
+                </div>
+                <span class="category-badge safe-badge">90%+</span>
+              </a>
+            </li>
+            <li class="coupon-category-row-item" data-category-filter="fan">
+              <a href="#coupons-section" class="coupon-category-anchor">
+                <span class="category-icon-box"><i class="ph-bold ph-fire" style="color: #f97316;"></i></span>
+                <div class="category-info-col">
+                  <span class="category-title">FAN Grosses Cotes</span>
+                  <span class="category-sub">Combinés à fort potentiel</span>
+                </div>
+                <span class="category-badge fan-badge">x5 à x20</span>
+              </a>
+            </li>
+            <li class="coupon-category-row-item" data-category-filter="montante">
+              <a href="#coupons-section" class="coupon-category-anchor">
+                <span class="category-icon-box"><i class="ph-bold ph-trend-up" style="color: #a855f7;"></i></span>
+                <div class="category-info-col">
+                  <span class="category-title">Montante IA</span>
+                  <span class="category-sub">Progression de capital</span>
+                </div>
+                <span class="category-badge montante-badge">Palier 3</span>
+              </a>
+            </li>
+            <li class="coupon-category-row-item" data-category-filter="all">
+              <a href="#coupons-section" class="coupon-category-anchor">
+                <span class="category-icon-box"><i class="ph-bold ph-crosshair" style="color: #38bdf8;"></i></span>
+                <div class="category-info-col">
+                  <span class="category-title">Score Exact & xG</span>
+                  <span class="category-sub">Modèle prédictif précis</span>
+                </div>
+                <span class="category-badge exact-badge">xG PRO</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Section 3 : Nos 3 Forfaits d'Abonnement -->
+        <div class="sidebar-section-block">
+          <div class="sidebar-section-header">NOS 3 FORFAITS D'ABONNEMENT</div>
+          <div class="sidebar-pricing-shortcuts-grid">
+            <a href="#pricing-section" class="sidebar-plan-card rookie-shortcut" data-action="subscribe-plan" data-plan="rookie">
+              <div class="plan-sc-top">
+                <span class="plan-sc-name">⚡ Fast Rookie</span>
+                <span class="plan-sc-duration">14 JOURS</span>
+              </div>
+              <div class="plan-sc-details">SAFE + FUN • 3 999 FCFA</div>
+              <div class="plan-sc-price">6.10€ <span>/ 14j</span></div>
+            </a>
+            <a href="#pricing-section" class="sidebar-plan-card standard-shortcut active-tier" data-action="subscribe-plan" data-plan="standard">
+              <div class="plan-sc-top">
+                <span class="plan-sc-name">⭐ Fast Standard</span>
+                <span class="plan-sc-badge">POPULAIRE</span>
+              </div>
+              <div class="plan-sc-details">SAFE + FUN • 5 999 FCFA</div>
+              <div class="plan-sc-price">9.15€ <span>/ mois</span></div>
+            </a>
+            <a href="#pricing-section" class="sidebar-plan-card premium-shortcut" data-action="subscribe-plan" data-plan="premium">
+              <div class="plan-sc-top">
+                <span class="plan-sc-name">👑 Fast Premium</span>
+                <span class="plan-sc-badge gold">ACCÈS TOTAL</span>
+              </div>
+              <div class="plan-sc-details">TOUS les coupons • 8 999 FCFA</div>
+              <div class="plan-sc-price">13.72€ <span>/ mois</span></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Section 4 : Mini Carte VIP Promo -->
+        <div class="sidebar-promo-badge-card">
+          <div class="promo-neon-shine"></div>
+          <div class="promo-gold-tag"><i class="ph-fill ph-crown"></i> PRIVILÈGE FAST SPORTY</div>
+          <h4 class="promo-gold-title">89.4% de Réussite IA</h4>
+          <p class="promo-gold-text">Coupons SAFE, FAN & Montantes avec codes de réservation 1xBet et Betclic.</p>
+          <a href="#pricing-section" class="promo-gold-cta-btn">
+            <span>Débloquer mon Abonnement</span>
+            <i class="ph-bold ph-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Section 5 : Statut API & Mentions -->
+        <div class="sidebar-system-footer">
+          <div class="api-online-status">
+            <span class="pulse-indicator"></span>
+            <span>Algorithme IA V3.4 Opérationnel</span>
+          </div>
+          <div class="responsible-gaming-notice">
+            <i class="ph-bold ph-shield-warning"></i> 18+ • Pronostics sportifs & analyses IA
+          </div>
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- ==========================================================================
+         MAIN CONTENT AREA WRAPPER
+         ========================================================================== -->
+    <div class="app-main-area" id="app-main-area">
+      <main id="user-portal-view">
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="accueil">
+          <!-- Carrousel Central Type 1xBet (Objectif 2) -->
+          <div id="hero-banner-carousel" class="hero-banner-carousel-container" aria-roledescription="carousel"
+            aria-label="Bannières et coupons du jour FASTSporty"></div>
+
+
+        </section>
+
+        <!-- ==========================================================================
+         LES 4 BLOCS DE CHIFFRES CLÉS (FAST SPORTY AI) - VERSION PRO & COMPACTE
+         - Titre & badge néon stylisés
+         - Espacement serré et intégré sous le carrousel
+         - 4 blocs ultra-pros : 54 000+ Abonnés | 10 M Gains cumulés | 50 000 Paris analysés | 49 700 Coupons gagnants
+         ========================================================================== -->
+        <section class="key-metrics-section" id="key-metrics-section" aria-label="Chiffres clés FASTSporty AI">
+          <!-- En-tête stylisé avec mini badge et titre -->
+          <div class="metrics-header-row">
+            <span class="metrics-pill-badge">
+              <span class="metrics-live-dot"></span>
+              <span>IMPACT & PERFORMANCE</span>
+            </span>
+            <h3 class="metrics-headline">La Puissance FASTSporty en Chiffres</h3>
+          </div>
+
+          <!-- Grille des 4 cartes métriques -->
+          <div class="key-metrics-container">
+            <!-- 1. 54 000+ -> "Abonnés" -->
+            <div class="metric-counter-card" data-index="0">
+              <div class="metric-card-inner">
+                <div class="metric-number-wrap">
+                  <span class="metric-number" data-target="54000">0</span><span class="metric-suffix">+</span>
+                </div>
+                <div class="metric-label">Abonnés</div>
+              </div>
+              <div class="metric-bottom-glow" aria-hidden="true"></div>
+            </div>
+
+            <!-- 2. 10 M -> "Gains cumulés" -->
+            <div class="metric-counter-card" data-index="1">
+              <div class="metric-card-inner">
+                <div class="metric-number-wrap">
+                  <span class="metric-number" data-target="10">0</span><span class="metric-suffix">&nbsp;M</span>
+                </div>
+                <div class="metric-label">Gains cumulés</div>
+              </div>
+              <div class="metric-bottom-glow" aria-hidden="true"></div>
+            </div>
+
+            <!-- 3. 50 000 -> "Paris analysés" -->
+            <div class="metric-counter-card" data-index="2">
+              <div class="metric-card-inner">
+                <div class="metric-number-wrap">
+                  <span class="metric-number" data-target="50000">0</span>
+                </div>
+                <div class="metric-label">Paris analysés</div>
+              </div>
+              <div class="metric-bottom-glow" aria-hidden="true"></div>
+            </div>
+
+            <!-- 4. 49 700 -> "Coupons gagnants" -->
+            <div class="metric-counter-card" data-index="3">
+              <div class="metric-card-inner">
+                <div class="metric-number-wrap">
+                  <span class="metric-number" data-target="49700">0</span>
+                </div>
+                <div class="metric-label">Coupons gagnants</div>
+              </div>
+              <div class="metric-bottom-glow" aria-hidden="true"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+         NOUVELLE SECTION : ANALYSES PRÉDICTIVES DU JOUR PAR L'IA
+         Prédictions algorithmiques, probabilités xG et liaisons vers les coupons VIP
+         ========================================================================== -->
+        <section class="section-wrapper" id="live-matches-section">
+          <div class="section-head">
+            <div>
+              <div class="section-badge-pill">
+                <span class="live-dot-pulse"></span> ALGORITHME PRÉDICTIF IA EN TEMPS RÉEL
+              </div>
+              <h2 class="section-title">
+                <span><i class="ph-bold ph-lightning"></i></span> Analyses Prédictives du Jour par l'IA
+              </h2>
+              <p class="section-subtitle">
+                Scores en direct, métriques xG et conseils stratégiques de notre IA. Retrouvez ces sélections intégrées
+                dans nos coupons SAFE et FAN avec codes de réservation 1xBet et Betclic.
+              </p>
+            </div>
+            <div class="section-controls-row">
+              <button class="btn-refresh-live" id="live-refresh-btn" title="Rafraîchir les analyses IA en direct">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M21 2v6h-6M3 12a9 9 0 0 1 15-6.7L21 8M3 22v-6h6M21 12a9 9 0 0 1-15 6.7L3 16" />
+                </svg>
+                <span>Actualiser les analyses</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- League Filter Pills -->
+          <div class="league-pills-bar">
+            <button class="league-filter-pill active" data-league="all">Toutes les compétitions</button>
+            <button class="league-filter-pill" data-league="Champions"><i class="ph-fill ph-trophy"
+                style="color: #818cf8;"></i> Ligue des Champions</button>
+            <button class="league-filter-pill" data-league="Premier"><i class="ph-bold ph-shield-check"
+                style="color: #38bdf8;"></i> Premier League</button>
+            <button class="league-filter-pill" data-league="La Liga"><i class="ph-bold ph-shield-check"
+                style="color: #f87171;"></i> La Liga</button>
+            <button class="league-filter-pill" data-league="Ligue 1"><i class="ph-bold ph-shield-check"
+                style="color: #34d399;"></i> Ligue 1</button>
+            <button class="league-filter-pill" data-league="Serie A"><i class="ph-bold ph-shield-check"
+                style="color: #22d3ee;"></i> Serie A</button>
+            <button class="league-filter-pill" data-league="Bundesliga"><i class="ph-bold ph-shield-check"
+                style="color: #fbbf24;"></i> Bundesliga</button>
+          </div>
+
+          <!-- Live Matches Grid populated by src/components/liveCenter.js -->
+          <div class="live-matches-grid" id="live-matches-grid">
+            <!-- Rendu dynamique via API-Sports & IA FASTSporty -->
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+         NOUVELLE SECTION : BILAN CERTIFIÉ & MUR DES PREUVES DE GAINS
+         Anti-IA, 100% transparence, vrais bordereaux validés
+         ========================================================================== -->
+        <!-- ==========================================================================
+         SECTION BILAN CERTIFIÉ & COURBE DE GAINS (SHOWCASE GRAPHE + PREUVE SOCIALE)
+         ========================================================================== -->
+        <section class="section-wrapper" id="transparency-section">
+          <div class="section-head">
+            <div>
+              <div class="section-badge-pill green">
+                <span><i class="ph-bold ph-shield-check"></i></span> BILAN 100% TRANSPARENT & VÉRIFIABLE
+              </div>
+              <h2 class="section-title">
+                <span><i class="ph-bold ph-chart-line-up"></i></span> Mur des Victoires & Bilan Certifié
+              </h2>
+              <p class="section-subtitle">
+                Aucun faux résultat. Suivez la courbe d'évolution réelle des gains de notre communauté FASTSporty AI et les retraits validés.
+              </p>
+            </div>
+          </div>
+
+          <!-- Vitrine 2 Colonnes : Graphe à Gauche / Image + Texte à Droite -->
+          <div class="transparency-showcase-grid">
+            <!-- COLONNE GAUCHE : Graphe de Progression des Gains & KPIs -->
+            <div class="showcase-chart-card">
+              <div class="chart-card-header">
+                <div class="chart-header-info">
+                  <span class="chart-title-tag"><i class="ph-bold ph-chart-line-up"></i> Performance Certifiée</span>
+                  <h3 class="chart-main-title">Courbe de Croissance du Capital</h3>
+                  <p class="chart-sub-title">Calculé sur mise fixe de 50 € / coupon • Algorithmes xG Value</p>
+                </div>
+                <div class="chart-header-metrics">
+                  <div class="chart-main-profit-box">
+                    <span class="profit-amount" id="chart-kpi-profit">+12,450 €</span>
+                    <span class="profit-roi-pill" id="chart-kpi-roi">+28.7% ROI</span>
+                  </div>
+                  <div class="chart-period-tabs" role="tablist">
+                    <button class="chart-period-btn active" data-period="1m" type="button">1 Mois</button>
+                    <button class="chart-period-btn" data-period="3m" type="button">3 Mois</button>
+                    <button class="chart-period-btn" data-period="season" type="button">Saison 2026</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Zone Canvas Interactif Chart.js -->
+              <div class="chart-canvas-container">
+                <canvas id="performanceChartCanvas"></canvas>
+              </div>
+
+              <!-- Mini-Indicateurs de Confiance & Audit -->
+              <div class="chart-kpi-footer-row">
+                <div class="chart-mini-kpi">
+                  <span class="kpi-micro-label">Taux de Réussite</span>
+                  <strong class="kpi-micro-value text-green" id="chart-kpi-winrate">84.2%</strong>
+                </div>
+                <div class="chart-mini-kpi-sep"></div>
+                <div class="chart-mini-kpi">
+                  <span class="kpi-micro-label">Cote Moyenne</span>
+                  <strong class="kpi-micro-value" id="chart-kpi-avgodd">3.25</strong>
+                </div>
+                <div class="chart-mini-kpi-sep"></div>
+                <div class="chart-mini-kpi">
+                  <span class="kpi-micro-label">Tickets Gagnés</span>
+                  <strong class="kpi-micro-value text-purple" id="chart-kpi-tickets">28/33</strong>
+                </div>
+                <div class="chart-mini-kpi-sep"></div>
+                <div class="chart-mini-kpi">
+                  <span class="kpi-micro-label">Audit Résultats</span>
+                  <strong class="kpi-micro-value text-verified"><i class="ph-fill ph-seal-check"></i> 100% Vérifié</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- COLONNE DROITE : Image du Gagnant + Accroche & Preuve Sociale -->
+            <div class="showcase-winner-card">
+              <div class="winner-visual-stage">
+                <div class="winner-glow-backdrop"></div>
+
+                <!-- Badge Flottant Retrait (Haut Gauche) -->
+                <div class="winner-float-chip chip-gain">
+                  <div class="chip-icon-box"><i class="ph-fill ph-money"></i></div>
+                  <div class="chip-text-content">
+                    <span class="chip-subtitle">Dernier Retrait 1xBet</span>
+                    <strong class="chip-main-val">+1,450.00 €</strong>
+                  </div>
+                </div>
+
+                <!-- Image détourée du membre FASTSporty AI -->
+                <img src="/images/community-winner.png" alt="Membre gagnant FASTSporty AI" class="winner-person-photo" loading="lazy" />
+
+                <!-- Badge Flottant Membre VIP (Bas Droite) -->
+                <div class="winner-float-chip chip-vip">
+                  <div class="chip-icon-box vip-gold"><i class="ph-fill ph-crown"></i></div>
+                  <div class="chip-text-content">
+                    <span class="chip-subtitle">Communauté VIP</span>
+                    <strong class="chip-main-val">Membre Certifié</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Texte d'accompagnement & Réassurance Pro -->
+              <div class="winner-caption-box">
+                <h4 class="winner-caption-title">
+                  <span>Des résultats réels,</span> pas des promesses.
+                </h4>
+                <p class="winner-caption-desc">
+                  « Grâce aux prédictions xG haute précision et à une gestion de mise rigoureuse, notre communauté encaisse des gains réguliers et sécurise son capital chaque semaine. »
+                </p>
+                <div class="winner-proof-tags">
+                  <span class="proof-pill-item"><i class="ph-bold ph-check"></i> 0% de faux coupons</span>
+                  <span class="proof-pill-item"><i class="ph-bold ph-check"></i> Preuves de retraits réelles</span>
+                  <span class="proof-pill-item"><i class="ph-bold ph-check"></i> 1 240+ parieurs actifs</span>
+                </div>
+                <a href="#coupons-section" class="btn-winner-cta">
+                  <i class="ph-bold ph-ticket"></i>
+                  <span>Accéder aux Coupons Gagnants</span>
+                  <i class="ph-bold ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+         NOUVELLE SECTION : ANALYSE TACTIQUE & CHOC DE LA SEMAINE (H2H DEEP DIVE)
+         ========================================================================== -->
+        <section class="section-wrapper" id="match-analysis-section">
+          <div class="section-head">
+            <div>
+              <div class="section-badge-pill">
+                <span><i class="ph-bold ph-sword"></i></span> LE GRAND CHOC EUROPÉEN
+              </div>
+              <h2 class="section-title">
+                <span><i class="ph-bold ph-crosshair"></i></span> Décryptage Tactique & Historique Face-à-Face
+              </h2>
+              <p class="section-subtitle">
+                Analyse approfondie du sommet européen entre les deux géants : face-à-face, métriques xG et conseil du
+                tipster.
+              </p>
+            </div>
+          </div>
+
+          <div class="h2h-analysis-card">
+            <div class="specular-glare"></div>
+
+            <!-- Clash Header -->
+            <div class="h2h-clash-banner">
+              <div class="h2h-team-col">
+                <img src="https://media.api-sports.io/football/teams/541.png" alt="Real Madrid" class="h2h-crest" />
+                <div class="h2h-team-title">Real Madrid</div>
+                <div class="h2h-form-badges">
+                  <span class="form-pill win">V</span>
+                  <span class="form-pill win">V</span>
+                  <span class="form-pill win">V</span>
+                  <span class="form-pill draw">N</span>
+                  <span class="form-pill win">V</span>
+                </div>
+              </div>
+
+              <div class="h2h-center-col">
+                <span class="h2h-comp-badge">LIGUE DES CHAMPIONS • 1/4 FINALE</span>
+                <div class="h2h-vs-sign">VS</div>
+                <div class="h2h-venue-info">Santiago Bernabéu • 21h00</div>
+                <div class="h2h-odds-pill">Cote 1: <strong>2.10</strong> • N: <strong>3.45</strong> • 2:
+                  <strong>3.20</strong></div>
+              </div>
+
+              <div class="h2h-team-col">
+                <img src="https://media.api-sports.io/football/teams/50.png" alt="Manchester City" class="h2h-crest" />
+                <div class="h2h-team-title">Manchester City</div>
+                <div class="h2h-form-badges">
+                  <span class="form-pill win">V</span>
+                  <span class="form-pill draw">N</span>
+                  <span class="form-pill win">V</span>
+                  <span class="form-pill win">V</span>
+                  <span class="form-pill loss">D</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Detailed Stats Comparison Grid -->
+            <div class="h2h-details-grid">
+              <!-- Left: Head to Head Last 5 Direct Clashes -->
+              <div class="h2h-box">
+                <h4 class="h2h-box-title"><i class="ph-bold ph-clipboard-text"></i> 5 Dernières Confrontations Directes
+                </h4>
+                <div class="h2h-history-list">
+                  <div class="history-item">
+                    <span class="history-date">17 Avr 2024</span>
+                    <span class="history-teams">Man City 1 - 1 Real Madrid (tab 3-4)</span>
+                    <span class="history-tag">C1</span>
+                  </div>
+                  <div class="history-item">
+                    <span class="history-date">09 Avr 2024</span>
+                    <span class="history-teams">Real Madrid 3 - 3 Man City</span>
+                    <span class="history-tag">C1</span>
+                  </div>
+                  <div class="history-item">
+                    <span class="history-date">17 Mai 2023</span>
+                    <span class="history-teams">Man City 4 - 0 Real Madrid</span>
+                    <span class="history-tag">C1</span>
+                  </div>
+                  <div class="history-item">
+                    <span class="history-date">09 Mai 2023</span>
+                    <span class="history-teams">Real Madrid 1 - 1 Man City</span>
+                    <span class="history-tag">C1</span>
+                  </div>
+                  <div class="history-item">
+                    <span class="history-date">04 Mai 2022</span>
+                    <span class="history-teams">Real Madrid 3 - 1 Man City (a.p.)</span>
+                    <span class="history-tag">C1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Middle: Radar / Probability Bars -->
+              <div class="h2h-box">
+                <h4 class="h2h-box-title"><i class="ph-bold ph-chart-bar"></i> Probabilités & Métriques Avancées</h4>
+
+                <div class="metric-row">
+                  <div class="metric-header">
+                    <span>Victoire Real Madrid</span>
+                    <strong>46%</strong>
+                  </div>
+                  <div class="progress-track">
+                    <div class="progress-bar-fill" style="width: 46%;"></div>
+                  </div>
+                </div>
+
+                <div class="metric-row">
+                  <div class="metric-header">
+                    <span>Match Nul</span>
+                    <strong>28%</strong>
+                  </div>
+                  <div class="progress-track">
+                    <div class="progress-bar-fill" style="width: 28%; background: #9A63FF;"></div>
+                  </div>
+                </div>
+
+                <div class="metric-row">
+                  <div class="metric-header">
+                    <span>Victoire Manchester City</span>
+                    <strong>26%</strong>
+                  </div>
+                  <div class="progress-track">
+                    <div class="progress-bar-fill" style="width: 26%;"></div>
+                  </div>
+                </div>
+
+                <div class="metric-row">
+                  <div class="metric-header">
+                    <span>Les 2 Équipes Marquent (BTTS)</span>
+                    <strong class="text-green">78%</strong>
+                  </div>
+                  <div class="progress-track">
+                    <div class="progress-bar-fill" style="width: 78%; background: var(--c-green-safe);"></div>
+                  </div>
+                </div>
+
+                <div class="metric-row">
+                  <div class="metric-header">
+                    <span>Expected Goals (xG projetés)</span>
+                    <span>2.15 vs 1.68</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Tipster Verdict -->
+              <div class="h2h-box tipster-box">
+                <h4 class="h2h-box-title"><i class="ph-bold ph-brain"></i>  Avis de l'Expert & Value Bet</h4>
+                <p class="tipster-text">
+                  Historiquement, ces deux équipes se livrent des duels très ouverts avec une moyenne de <strong>3.6
+                    buts</strong> par match. À Bernabéu, le Real est invaincu lors de ses 18 derniers rendez-vous
+                  européens.
+                </p>
+                <div class="tipster-recommendation">
+                  <div class="tip-rec-label">PRONOSTIC CONSEILLÉ :</div>
+                  <div class="tip-rec-bet">Real Madrid ou Nul & Les 2 Équipes Marquent</div>
+                  <div class="tip-rec-odd">Cote Recommandée : <strong>2.05</strong></div>
+                </div>
+                <button class="btn-neon-primary" data-action="open-auth" data-mode="register"
+                  style="width: 100%; justify-content: center; margin-top: 14px;">
+                  <span>Recevoir l'Analyse VIP Complète →</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+         SCROLL-DRIVEN EXPANDING SECTION (Inspired by MCP 21 scroll expansion)
+         As user scrolls down, this showcase card smoothly expands into full view
+         ========================================================================== -->
+        <section class="expand-section-container" id="scroll-expand-section">
+          <div class="expandable-card-wrapper">
+            <div class="expandable-card" id="expandable-vip-card">
+              <div class="specular-glare"></div>
+
+              <div class="expand-card-header">
+                <div class="expand-tag">
+                  <span>⚡</span> ANALYSE VIP & RADAR DE PRÉDICTION IA
+                </div>
+                <div style="font-size: 13px; color: #a7a3c4;">
+                  Algorithme xG + Forme + Arbitrage
+                </div>
+              </div>
+
+              <div class="expand-grid">
+                <div class="expand-left">
+                  <h3>Modélisation Algorithmique & Projections xG</h3>
+                  <p>
+                    Analysez les probabilités calculées par notre modèle prédictif sur les plus grandes affiches européennes.
+                  </p>
+
+                  <div style="display: flex; gap: 12px; align-items: center; margin-top: 24px;">
+                    <a href="#coupons-section" class="btn-neon-primary">
+                      <span>Consulter les Coupons du Jour</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Visual Preview Card -->
+                <div class="expand-right-preview">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                    <span style="font-size: 12px; font-weight: 700; color: #B07CFF;">PREDICTION RADAR IA</span>
+                    <span
+                      style="font-size: 11px; background: rgba(34, 197, 94, 0.2); color: #4ade80; padding: 2px 8px; border-radius: 4px;">CONFIANCE
+                      94%</span>
+                  </div>
+
+                  <div style="font-size: 14px; font-weight: 700; margin-bottom: 8px;">Real Madrid vs Manchester City
+                  </div>
+                  <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 14px;">Santiago Bernabéu • 21h00
+                  </div>
+
+                  <div style="display: flex; flex-direction: column; gap: 8px; font-size: 12px;">
+                    <div style="display: flex; justify-content: space-between;">
+                      <span>Probabilité Victoire Domicile</span>
+                      <strong style="color: #A78BFA;">58%</strong>
+                    </div>
+                    <div class="progress-track" style="height: 4px;">
+                      <div class="progress-bar-fill" style="width: 58%;"></div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; margin-top: 4px;">
+                      <span>Probabilité Plus de 2.5 Buts</span>
+                      <strong style="color: #4ade80;">74%</strong>
+                    </div>
+                    <div class="progress-track" style="height: 4px;">
+                      <div class="progress-bar-fill" style="width: 74%; background: #22c55e;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+         COUPONS & PRONOSTICS ALGORITHMIQUES
+         ========================================================================== -->
+        <section class="section-wrapper" id="coupons-section">
+          <div class="section-head">
+            <div>
+              <h2 class="section-title">
+                <span><i class="ph-bold ph-ticket"></i></span> Coupons & Pronostics Algorithmiques
+              </h2>
+              <p class="section-subtitle">
+                Consultez nos sélections publiques gratuites ou débloquez nos combinés VIP exclusifs.
+              </p>
+            </div>
+
+            <!-- Simulation Switch for Testing VIP Mode -->
+            <label class="vip-simulation-toggle" title="Permet de tester l'affichage des coupons avec ou sans le verrou">
+              <input type="checkbox" id="vip-simulation-toggle-input" style="accent-color: #8b5cf6;" />
+              <span><i class="ph-bold ph-eye"></i> Simuler Utilisateur VIP (Débloquer tout)</span>
+            </label>
+          </div>
+
+          <!-- Mandatory Legal Disclaimer Banner (Master Spec) -->
+          <div class="disclaimer-banner" style="display:flex; align-items:center; gap:10px; margin: 16px 0 20px; padding: 12px 18px; border-radius: 12px; background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.25); color: #fca5a5; font-size: 13px; font-weight: 500;">
+            <i class="ph-bold ph-shield-warning" style="font-size: 18px; color: #ef4444; flex-shrink: 0;"></i>
+            <span><strong>Avertissement Légal :</strong> Les pronostics sont indicatifs, aucun gain n'est garanti. Réservé aux personnes majeures (18+). FAST Sporty AI est un outil d'aide à la décision algorithmique.</span>
+          </div>
+
+          <!-- Filters Bar -->
+          <div class="coupons-filter-bar">
+            <div class="filter-pills-list">
+              <button class="filter-pill active" data-filter="all"><i class="ph-bold ph-list-bullets"></i> Tous</button>
+              <button class="filter-pill" data-filter="safe"><i class="ph-fill ph-shield-check"></i> SAFE</button>
+              <button class="filter-pill" data-filter="fun"><i class="ph-bold ph-fire"></i> FUN</button>
+              <button class="filter-pill" data-filter="montante"><i class="ph-bold ph-trend-up"></i> Montante</button>
+              <button class="filter-pill" data-filter="premium"><i class="ph-bold ph-crown"></i> Premium</button>
+              <button class="filter-pill" data-filter="free"><i class="ph-bold ph-gift"></i> Gratuits</button>
+              <button class="filter-pill" data-filter="won"><i class="ph-bold ph-trophy"></i> Validés</button>
+            </div>
+          </div>
+
+          <!-- Dynamic Grid of Coupons -->
+          <div class="coupons-grid" id="coupons-grid-container">
+            <!-- Rendered dynamically via src/main.js -->
+          </div>
+        </section>
+
+        <!-- =====================================================================
+         SECTION ABONNEMENTS : Fast Rookie / Fast Standard / Fast Premium
+         ===================================================================== -->
+        <section class="section-wrapper" id="pricing-section">
+          <div class="section-head" style="justify-content:center;text-align:center;">
+            <div>
+              <div class="section-badge-pill" style="margin:0 auto 12px;">
+                <span><i class="ph-bold ph-crown"></i></span> NOS FORMULES
+              </div>
+              <h2 class="section-title" style="justify-content:center;">
+                <span><i class="ph-bold ph-lightning"></i></span> Choisissez Votre Formule FASTSporty
+              </h2>
+              <p class="section-subtitle">
+                Coupons analysés quotidiennement — SAFE, FAN, Montantes &amp; Scores Exacts.
+              </p>
+            </div>
+          </div>
+
+          <div class="pricing-grid">
+
+            <!-- Fast Rookie -->
+            <div class="pricing-card">
+              <div class="pricing-plan-tag">14 JOURS</div>
+              <div class="pricing-title">Fast Rookie</div>
+              <div class="pricing-desc">Découvrez l'analyse FASTSporty pendant 2 semaines.</div>
+              <div class="pricing-amount-row">
+                <span class="price-currency">€</span>
+                <span class="price-number">6.10</span>
+                <span class="price-period">/ 14 jours</span>
+              </div>
+              <div style="font-size:12px; color:#22E5A0; margin-bottom:14px; font-weight:600;">3 999 FCFA facturés</div>
+              <ul class="features-list">
+                <li><i class="ph-bold ph-check-circle" style="color:#22E5A0;font-size:18px;"></i><span><strong>2
+                      coupons/jour</strong> (1 SAFE + 1 FUN)</span></li>
+                <li><i class="ph-bold ph-check-circle" style="color:#22E5A0;font-size:18px;"></i><span>Déblocage à l'unité disponible (Montante &amp; Premium)</span></li>
+                <li><i class="ph-bold ph-check-circle" style="color:#22E5A0;font-size:18px;"></i><span>Analyses sur 240+
+                    métriques IA</span></li>
+                <li><i class="ph-bold ph-x-circle" style="color:var(--c-text-muted);font-size:18px;"></i><span
+                    style="color:var(--c-text-muted);">Montante &amp; Premium non inclus</span></li>
+              </ul>
+              <button class="btn-glass" data-action="subscribe-plan" data-plan="rookie">Démarrer — Fast Rookie</button>
+            </div>
+
+            <!-- Fast Standard (Popular) -->
+            <div class="pricing-card popular">
+              <div class="popular-ribbon"><i class="ph-fill ph-star"></i> LE PLUS POPULAIRE</div>
+              <div class="specular-glare"></div>
+              <div class="pricing-plan-tag" style="background:rgba(124,77,255,0.25);border-color:#7C4DFF;">1 MOIS</div>
+              <div class="pricing-title">Fast Standard</div>
+              <div class="pricing-desc">Tout Fast Rookie, pour 1 mois complet.</div>
+              <div class="pricing-amount-row">
+                <span class="price-currency">€</span>
+                <span class="price-number">9.15</span>
+                <span class="price-period">/ mois</span>
+              </div>
+              <div style="font-size:12px; color:#b18cff; margin-bottom:14px; font-weight:600;">5 999 FCFA facturés</div>
+              <ul class="features-list">
+                <li><i class="ph-bold ph-check-circle" style="color:#22E5A0;font-size:18px;"></i><span><strong>2
+                      coupons/jour</strong> (1 SAFE + 1 FUN)</span></li>
+                <li><i class="ph-bold ph-check-circle" style="color:#22E5A0;font-size:18px;"></i><span>Accès pendant
+                    <strong>1 mois complet</strong></span></li>
+                <li><i class="ph-bold ph-check-circle" style="color:#22E5A0;font-size:18px;"></i><span>Déblocage à l'unité disponible</span></li>
+                <li><i class="ph-bold ph-check-circle" style="color:#22E5A0;font-size:18px;"></i><span>Historique
+                    complet des pronostics vérifiés</span></li>
+              </ul>
+              <button class="btn-neon-primary" data-action="subscribe-plan" data-plan="standard">Choisir Fast
+                Standard</button>
+            </div>
+
+            <!-- Fast Premium -->
+            <div class="pricing-card premium">
+              <div class="popular-ribbon" style="background:linear-gradient(90deg,#d4a017,#f7c948);color:#0a0a1a;"><i
+                  class="ph-fill ph-crown"></i> ACCÈS TOTAL</div>
+              <div class="specular-glare"></div>
+              <div class="pricing-plan-tag"
+                style="background:rgba(212,160,23,0.15);border-color:#d4a017;color:#f7c948;">1 MOIS</div>
+              <div class="pricing-title"
+                style="background:linear-gradient(90deg,#d4a017,#f7c948);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">
+                Fast Premium</div>
+              <div class="pricing-desc">Pack complet — accès à toutes les fonctionnalités sans restriction.</div>
+              <div class="pricing-amount-row">
+                <span class="price-currency">€</span>
+                <span class="price-number">13.72</span>
+                <span class="price-period">/ mois</span>
+              </div>
+              <div style="font-size:12px; color:#f7c948; margin-bottom:14px; font-weight:600;">8 999 FCFA facturés</div>
+              <ul class="features-list">
+                <li><i class="ph-fill ph-crown" style="color:#f7c948;font-size:18px;"></i><span><strong>4
+                      coupons/jour</strong> (SAFE + FUN + Montante + Premium)</span></li>
+                <li><i class="ph-bold ph-check-circle" style="color:#22E5A0;font-size:18px;"></i><span>Toutes les
+                    catégories débloquées sans restriction</span></li>
+                <li><i class="ph-bold ph-check-circle" style="color:#22E5A0;font-size:18px;"></i><span>Scores exacts &amp; tous les coupons Extras inclus</span></li>
+                <li><i class="ph-bold ph-check-circle" style="color:#22E5A0;font-size:18px;"></i><span>Support
+                    prioritaire 7j/7</span></li>
+              </ul>
+              <button class="btn-neon-primary"
+                style="background:linear-gradient(90deg,#b8860b,#d4a017,#f7c948);color:#0a0a1a;font-weight:800;"
+                data-action="subscribe-plan" data-plan="premium">Passer au Premium</button>
+            </div>
+
+          </div>
+
+          <!-- Badge des Moyens de Paiement MakeTou -->
+          <div class="pricing-payment-methods" style="display:flex; justify-content:center; align-items:center; gap:12px; margin-top:28px; padding:14px 20px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:14px; font-size:13px; color:var(--c-text-muted); flex-wrap:wrap; text-align:center;">
+            <span style="display:flex; align-items:center; gap:6px; font-weight:600; color:#fff;"><i class="ph-bold ph-shield-check" style="color:#22E5A0;font-size:18px;"></i> Paiements Sécurisés Instantanés via MakeTou :</span>
+            <span style="background:rgba(255,102,0,0.18); border:1px solid rgba(255,102,0,0.3); color:#FF6600; padding:4px 10px; border-radius:8px; font-weight:700; font-size:11px; display:inline-flex; align-items:center; gap:4px;"><i class="ph-bold ph-device-mobile"></i> Orange Money</span>
+            <span style="background:rgba(255,204,0,0.18); border:1px solid rgba(255,204,0,0.3); color:#FFCC00; padding:4px 10px; border-radius:8px; font-weight:700; font-size:11px; display:inline-flex; align-items:center; gap:4px;"><i class="ph-bold ph-device-mobile"></i> MTN MoMo</span>
+            <span style="background:rgba(27,169,225,0.18); border:1px solid rgba(27,169,225,0.3); color:#1BA9E1; padding:4px 10px; border-radius:8px; font-weight:700; font-size:11px; display:inline-flex; align-items:center; gap:4px;"><i class="ph-bold ph-wave-triangle"></i> Wave</span>
+            <span style="background:rgba(124,77,255,0.18); border:1px solid rgba(124,77,255,0.3); color:#7C4DFF; padding:4px 10px; border-radius:8px; font-weight:700; font-size:11px; display:inline-flex; align-items:center; gap:4px;"><i class="ph-bold ph-credit-card"></i> CB / Visa / Mastercard</span>
+          </div>
+        </section>
+
+        <!-- =====================================================================
+         SECTION AVIS ET TEMOIGNAGES
+         ===================================================================== -->
+        <section class="section-wrapper" id="reviews-section">
+          <div class="section-head" style="justify-content:center;text-align:center;">
+            <div>
+              <div class="section-badge-pill" style="margin:0 auto 12px;">
+                <span><i class="ph-bold ph-star"></i></span> CE QUE DISENT NOS MEMBRES
+              </div>
+              <h2 class="section-title" style="justify-content:center;">
+                <span><i class="ph-bold ph-chat-circle-dots"></i></span> Avis &amp; Temoignages Verifies
+              </h2>
+              <p class="section-subtitle">Plus de 54 000 membres nous font confiance.</p>
+            </div>
+          </div>
+
+          <div class="reviews-grid">
+
+            <div class="review-card">
+              <div class="review-header">
+                <img src="/images/reviews/moussa.jpg" alt="Moussa K." class="review-avatar" />
+                <div class="review-meta">
+                  <div class="review-name">Moussa K.</div>
+                  <div class="review-plan"><i class="ph-fill ph-crown"></i> Fast Premium</div>
+                  <div class="review-stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                      class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                </div>
+              </div>
+              <p class="review-text">"Les cotes sont fiables et les analyses serieuses. J'ai suivi les coupons SAFE
+                pendant 3 semaines et j'ai gagne sur 14 des 17 selections. C'est du travail de qualite, pas du hasard."
+              </p>
+              <div class="review-gain-badge"><i class="ph-bold ph-trend-up"></i> +340€ en 3 semaines</div>
+            </div>
+
+            <div class="review-card">
+              <div class="review-header">
+                <img src="/images/reviews/aicha.jpg" alt="Aicha D." class="review-avatar" />
+                <div class="review-meta">
+                  <div class="review-name">Aicha D.</div>
+                  <div class="review-plan"><i class="ph-fill ph-crown"></i> Fast Standard</div>
+                  <div class="review-stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                      class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                </div>
+              </div>
+              <p class="review-text">"J'ai beaucoup gagne grace a ce site. Les pronostics sont bien expliques. Je
+                recommande le Fast Standard, excellent rapport qualite/prix."</p>
+              <div class="review-gain-badge"><i class="ph-bold ph-trend-up"></i> +220€ ce mois</div>
+            </div>
+
+            <div class="review-card">
+              <div class="review-header">
+                <img src="/images/reviews/koffi.jpg" alt="Koffi A." class="review-avatar" />
+                <div class="review-meta">
+                  <div class="review-name">Koffi A.</div>
+                  <div class="review-plan"><i class="ph-fill ph-crown"></i> Fast Premium</div>
+                  <div class="review-stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                      class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star-half"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="review-text">"Les montantes m'ont permis de doubler ma bankroll en un mois. Les alertes live
+                arrivent vraiment avant les bookmakers. Je ne parie plus sans FAST Sporty AI."</p>
+              <div class="review-gain-badge"><i class="ph-bold ph-trend-up"></i> +580€ en 1 mois</div>
+            </div>
+
+            <div class="review-card">
+              <div class="review-header">
+                <img src="/images/reviews/bakary.jpg" alt="Bakary S." class="review-avatar" />
+                <div class="review-meta">
+                  <div class="review-name">Bakary S.</div>
+                  <div class="review-plan"><i class="ph-bold ph-medal"></i> Fast Rookie</div>
+                  <div class="review-stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                      class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                </div>
+              </div>
+              <p class="review-text">"Au debut j'etais sceptique, mais apres ma premiere semaine en Fast Rookie j'ai
+                deja rentabilise l'abonnement x3. Je passe au Premium des ce mois."</p>
+              <div class="review-gain-badge"><i class="ph-bold ph-trend-up"></i> +145€ en 1 semaine</div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+         NOUVELLE SECTION : CANAL PRIVÉ VIP TELEGRAM & ALERTES LIVE
+         ========================================================================== -->
+        <section class="section-wrapper" id="live-tracking-section">
+          <div class="live-tracking-banner-card">
+            <div class="specular-glare"></div>
+
+            <div class="live-tracking-content-col">
+              <div class="section-badge-pill"
+                style="background: rgba(124, 77, 255, 0.15); border-color: #7C4DFF; color: #B07CFF;">
+                <span><i class="ph-bold ph-broadcast"></i></span> <span data-i18n="live_tracking.badge">SUIVI EN TEMPS
+                  RÉEL</span>
+              </div>
+              <h2 class="live-tracking-title" data-i18n="live_tracking.title">
+                Suivi des Résultats &amp; Algorithme Live
+              </h2>
+              <p class="live-tracking-desc" data-i18n="live_tracking.desc">
+                Suivez en direct l'évolution de chaque sélection avec métriques xG et conseils de cashout.
+              </p>
+
+              <ul class="live-tracking-features">
+                <li><span><i class="ph-bold ph-lightning"></i></span> <span data-i18n="live_tracking.feat_1">Alertes
+                    live en moins de 3 secondes sur les variations de cotes</span></li>
+                <li><span><i class="ph-bold ph-clipboard-text"></i></span> <span data-i18n="live_tracking.feat_2">Codes
+                    combinés 1xBet et Betclic prêts à copier en 1 clic</span></li>
+                <li><span><i class="ph-bold ph-chart-bar"></i></span> <span data-i18n="live_tracking.feat_3">Conseils
+                    d'arbitrage et cashout algorithmiques pour sécuriser vos gains</span></li>
+              </ul>
+
+              <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:24px;">
+                <a href="#coupons-section" class="btn-neon-primary">
+                  <i class="ph-bold ph-ticket"></i>
+                  <span data-i18n="nav.coupon_vip">Consulter les Coupons VIP</span>
+                </a>
+                <button class="btn-glass" data-action="open-auth" data-mode="register">
+                  <span data-i18n="auth.signup_title">Créer un compte gratuit</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Live Tracking Monitor Preview -->
+            <div class="live-tracking-monitor-col">
+              <div class="live-monitor-card">
+                <div class="monitor-header">
+                  <div class="monitor-live-dot"></div>
+                  <div>
+                    <div class="monitor-title">Flux Algorithmique • FASTSporty AI</div>
+                    <div class="monitor-status">Analyse en direct • 98.4% précision</div>
+                  </div>
+                </div>
+
+                <div class="monitor-feed-body">
+                  <div class="monitor-msg">
+                    <span class="monitor-time">En direct</span>
+                    <p><strong>⚡ DÉTECTION VALUE :</strong> Pression offensive élevée (Arsenal xG 1.84). But imminent.
+                    </p>
+                    <div class="monitor-bubble-highlight">Conseil IA : Plus de 0.5 But MT @ 1.95 (Indice 92%)</div>
+                  </div>
+
+                  <div class="monitor-msg success">
+                    <span class="monitor-time">Validé ✓</span>
+                    <p><strong>⚽ BUT VALIDÉ (41') !</strong></p>
+                    <p>Cote 1.95 encaissée. Algorithme prédictif confirmé.</p>
+                  </div>
+
+                  <div class="monitor-msg">
+                    <span class="monitor-time">À venir</span>
+                    <p><strong><i class="ph-bold ph-ticket"></i> SÉLECTION RECOMMANDÉE :</strong> Real Madrid vs
+                      Manchester City. Indice confiance 94%.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+         NOUVELLE SECTION : FOIRE AUX QUESTIONS & JEU RESPONSABLE (18+)
+         ========================================================================== -->
+        <section class="section-wrapper" id="faq-section">
+          <div class="section-head" style="text-align: center; justify-content: center;">
+            <div>
+              <div class="section-badge-pill" style="margin: 0 auto 10px;">
+                <span><i class="ph-bold ph-question"></i></span> TOUT COMPRENDRE EN 2 MINUTES
+              </div>
+              <h2 class="section-title" style="justify-content: center;">
+                <span><i class="ph-bold ph-question"></i></span> Questions Fréquemment Posées
+              </h2>
+              <p class="section-subtitle">
+                Toutes les réponses à vos questions pour parier sereinement et avec méthode.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-accordion-container">
+            <details class="faq-item" open>
+              <summary class="faq-question">
+                <span>FAST Sporty AI est-il un site de paris sportifs / bookmaker ?</span>
+                <span class="faq-chevron">▾</span>
+              </summary>
+              <div class="faq-answer">
+                <strong>Non, absolument pas !</strong> FAST Sporty AI n'est pas un bookmaker et n'accepte aucun pari
+                d'argent ni aucun dépôt. Nous sommes une plateforme d'analyse algorithmique et de
+                distribution de prédictions sportives par abonnement. Nous concevons chaque jour des coupons optimisés (SAFE, FUN,
+                Montantes, Premium) avec sélections et analyses détaillées.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>Comment utiliser le code ou les sélections du coupon ?</span>
+                <span class="faq-chevron">▾</span>
+              </summary>
+              <div class="faq-answer">
+                Sur chaque coupon débloqué, retrouvez la liste complète des matchs analysés, les prédictions algorithmiques retenues, les cotes indicatives et le code de référence pour charger vos sélections en 1 seconde.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>Quelle est la différence entre les 3 forfaits (Rookie, Standard, Premium) ?</span>
+                <span class="faq-chevron">▾</span>
+              </summary>
+              <div class="faq-answer">
+                <strong>Fast Rookie (14 jours — 3 999 XAF / ~6,10 €) :</strong> 2 coupons/jour (1 SAFE + 1 FUN) + possibilité de débloquer Montante ou Premium à l'unité.<br />
+                <strong>Fast Standard (30 jours — 5 999 XAF / ~9,15 €) :</strong> Tout le contenu de Fast Rookie actif durant 1 mois complet (30 jours). Idéal pour un suivi régulier.<br />
+                <strong>Fast Premium (30 jours — 8 999 XAF / ~13,72 €) :</strong> 4 coupons/jour (SAFE + FUN + Montante + Premium), accès 100% illimité à toutes les fonctionnalités et alertes live.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>À quelle heure sont publiés les combinés VIP du jour ?</span>
+                <span class="faq-chevron">▾</span>
+              </summary>
+              <div class="faq-answer">
+                Nos coupons principaux sont mis en ligne chaque jour entre 11h00 et 14h00 pour les matchs de
+                l'après-midi, et avant 18h30 pour les grands soirs européens. Une notification est automatiquement
+                envoyée sur l'application en direct.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>Qu'est-ce que le ROI et comment est-il calculé ?</span>
+                <span class="faq-chevron">▾</span>
+              </summary>
+              <div class="faq-answer">
+                Le ROI (Return On Investment) mesure le bénéfice net généré par rapport au montant total misé. Un ROI de
+                +28% signifie que pour chaque 100€ misés au cumulé sur nos sélections, vous avez généré 28€ de gain net
+                pur.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>Puis-je résilier mon abonnement VIP facilement ?</span>
+                <span class="faq-chevron">▾</span>
+              </summary>
+              <div class="faq-answer">
+                Oui, absolument. Tous nos abonnements sont sans aucun engagement de durée. Vous pouvez annuler en 1 seul
+                clic depuis votre espace membre ou en écrivant à notre support 7j/7.
+              </div>
+            </details>
+          </div>
+
+          <!-- Responsible Gaming Official Banner -->
+          <div class="responsible-gaming-banner">
+            <div class="rg-badge-18">18+</div>
+            <div class="rg-text">
+              <strong>JOUER COMPORTE DES RISQUES : ENDETTEMENT, ISOLEMENT, DÉPENDANCE.</strong>
+              <p>Les paris sportifs doivent rester un divertissement. Ne misez jamais d'argent dont vous pourriez avoir
+                besoin pour vos dépenses essentielles. Pour être aidé, appelez le <strong>09 74 75 13 13</strong> (appel
+                non surtaxé).</p>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- ==========================================================================
+       MODAL CADEAU DE BIENVENUE FASTSPORTY AI
+       ========================================================================== -->
+      <div class="welcome-gift-modal-backdrop" id="welcome-gift-modal" aria-hidden="true" role="dialog"
+        aria-modal="true">
+        <div class="gift-modal-wrapper">
+          <button class="modal-close-btn" id="gift-modal-close" aria-label="Fermer"><i
+              class="ph-bold ph-x"></i></button>
+
+          <div class="gift-modal-badge">
+            <i class="ph-bold ph-sparkle"></i>
+            <span data-i18n="gift_modal.badge">CADEAU EXCLUSIF DE BIENVENUE</span>
+          </div>
+
+          <div class="gift-modal-icon-banner">
+            <div class="gift-glow-ring"></div>
+            <div class="gift-icon-box">
+              <i class="ph-bold ph-gift"></i>
+            </div>
+          </div>
+
+          <h3 class="gift-modal-title" data-i18n="gift_modal.title">Bienvenue sur FASTSporty AI !</h3>
+          <p class="gift-modal-sub" data-i18n="gift_modal.subtitle">Pour célébrer votre arrivée, nous vous offrons un
+            pack de bienvenue exclusif.</p>
+
+          <div class="gift-perks-list">
+            <div class="gift-perk-item">
+              <div class="gift-perk-icon"><i class="ph-bold ph-ticket"></i></div>
+              <div class="gift-perk-text">
+                <h4 data-i18n="gift_modal.reward_1_title">1 Coupon VIP Offert</h4>
+                <p data-i18n="gift_modal.reward_1_desc">Accès 100% débloqué à votre premier combiné VIP sans aucun flou.
+                </p>
+              </div>
+            </div>
+
+            <div class="gift-perk-item">
+              <div class="gift-perk-icon"><i class="ph-bold ph-chart-line-up"></i></div>
+              <div class="gift-perk-text">
+                <h4 data-i18n="gift_modal.reward_2_title">Gestion de Bankroll IA</h4>
+                <p data-i18n="gift_modal.reward_2_desc">Accès illimité à l'algorithme de calcul de mise optimale.</p>
+              </div>
+            </div>
+
+            <div class="gift-perk-item">
+              <div class="gift-perk-icon"><i class="ph-bold ph-lightning"></i></div>
+              <div class="gift-perk-text">
+                <h4 data-i18n="gift_modal.reward_3_title">Alertes Cotes en Direct</h4>
+                <p data-i18n="gift_modal.reward_3_desc">Notifications en temps réel des chutes de cotes algorithmiques.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-neon-primary gift-claim-btn" id="gift-claim-action-btn">
+            <span data-i18n="gift_modal.btn_claim">Réclamer mon cadeau maintenant 🎉</span>
           </button>
         </div>
       </div>
 
-      <!-- League Filter Pills -->
-      <div class="league-pills-bar">
-        <button class="league-filter-pill active" data-league="all">Tous les championnats</button>
-        <button class="league-filter-pill" data-league="Champions">🇪🇺 Ligue des Champions</button>
-        <button class="league-filter-pill" data-league="Premier">🇬🇧 Premier League</button>
-        <button class="league-filter-pill" data-league="La Liga">🇪🇸 La Liga</button>
-        <button class="league-filter-pill" data-league="Ligue 1">🇫🇷 Ligue 1</button>
-        <button class="league-filter-pill" data-league="Serie A">🇮🇹 Serie A</button>
-        <button class="league-filter-pill" data-league="Bundesliga">🇩🇪 Bundesliga</button>
-      </div>
-
-      <!-- Live Matches Grid populated by src/components/liveCenter.js -->
-      <div class="live-matches-grid" id="live-matches-grid">
-        <!-- Rendu dynamique via API-Sports -->
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         NOUVELLE SECTION : BILAN CERTIFIÉ & MUR DES PREUVES DE GAINS
-         Anti-IA, 100% transparence, vrais bordereaux validés
-         ========================================================================== -->
-    <section class="section-wrapper" id="transparency-section">
-      <div class="section-head">
-        <div>
-          <div class="section-badge-pill green">
-            <span>🛡️</span> BILAN 100% TRANSPARENT & VÉRIFIABLE
-          </div>
-          <h2 class="section-title">
-            <span>📊</span> Mur des Victoires & Bilan Certifié
-          </h2>
-          <p class="section-subtitle">
-            Aucun faux résultat. Retrouvez chaque coupon joué avec cote validée, statut officiel et gains nets de nos membres.
-          </p>
-        </div>
-      </div>
-
-      <!-- Live Winning Ticker -->
-      <div class="winning-ticker-container">
-        <div class="ticker-badge">🔴 DIRECT GAINS</div>
-        <div class="ticker-track">
-          <div class="ticker-item">✅ Julien M. a validé le Combiné C1 (+384.50€)</div>
-          <div class="ticker-item">🔥 Ticket #TK-9402 Encaissé : Cote 4.85 validée !</div>
-          <div class="ticker-item">💰 Sarah B. vient de retirer 620.00€ sur 1xBet</div>
-          <div class="ticker-item">⭐ Combiné Safe Bundesliga validé hier (+185.00€)</div>
-          <div class="ticker-item">🚀 14 victoires sur les 16 derniers combinés VIP</div>
-        </div>
-      </div>
-
-      <!-- KPI Transparency Grid -->
-      <div class="transparency-kpi-grid">
-        <div class="kpi-card">
-          <div class="kpi-value text-green">+28.7%</div>
-          <div class="kpi-label">ROI Net Certifié (Mois en cours)</div>
-          <div class="kpi-sub">Calculé sur mise unitaire fixe</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-value">82.4%</div>
-          <div class="kpi-label">Taux de Réussite Global</div>
-          <div class="kpi-sub">75 tickets validés sur 91</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-value text-green">48,250€</div>
-          <div class="kpi-label">Gains Nets Encaissés (Membres)</div>
-          <div class="kpi-sub">Preuves de paiement disponibles</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-value">3.20</div>
-          <div class="kpi-label">Cote Moyenne des Combinés</div>
-          <div class="kpi-sub">Équilibre idéal value / risque</div>
-        </div>
-      </div>
-
-      <!-- Historical Validated Winning Slips Grid -->
-      <div class="won-tickets-grid">
-        <div class="won-ticket-card">
-          <div class="won-stamp">GAGNÉ ✅</div>
-          <div class="won-header">
-            <span class="won-ref">BORDEREAU #TK-94812</span>
-            <span class="won-date">Hier soir • 21h00</span>
-          </div>
-          <div class="won-matches">
-            <div class="won-match-row">
-              <span class="won-match-clash">Real Madrid vs Man City</span>
-              <span class="won-pick">Les 2 marquent @1.72</span>
-            </div>
-            <div class="won-match-row">
-              <span class="won-match-clash">Bayern vs Dortmund</span>
-              <span class="won-pick">+2.5 Buts @1.55</span>
-            </div>
-            <div class="won-match-row">
-              <span class="won-match-clash">PSG vs Marseille</span>
-              <span class="won-pick">PSG gagne @1.45</span>
-            </div>
-          </div>
-          <div class="won-footer">
-            <div>
-              <span class="won-lbl">Cote Validée :</span>
-              <strong class="won-odd">3.86</strong>
-            </div>
-            <div class="won-gain-tag">+193.00€ pour 50€</div>
-          </div>
-        </div>
-
-        <div class="won-ticket-card">
-          <div class="won-stamp">GAGNÉ ✅</div>
-          <div class="won-header">
-            <span class="won-ref">BORDEREAU #TK-94780</span>
-            <span class="won-date">Mardi • 20h45</span>
-          </div>
-          <div class="won-matches">
-            <div class="won-match-row">
-              <span class="won-match-clash">Arsenal vs Chelsea</span>
-              <span class="won-pick">Arsenal ou Nul & +1.5 buts @1.65</span>
-            </div>
-            <div class="won-match-row">
-              <span class="won-match-clash">Inter Milan vs Juventus</span>
-              <span class="won-pick">Moins de 3.5 buts @1.40</span>
-            </div>
-          </div>
-          <div class="won-footer">
-            <div>
-              <span class="won-lbl">Cote Validée :</span>
-              <strong class="won-odd">2.31</strong>
-            </div>
-            <div class="won-gain-tag">+115.50€ pour 50€</div>
-          </div>
-        </div>
-
-        <div class="won-ticket-card">
-          <div class="won-stamp">GAGNÉ ✅</div>
-          <div class="won-header">
-            <span class="won-ref">BORDEREAU #TK-94695</span>
-            <span class="won-date">Dimanche • 17h30</span>
-          </div>
-          <div class="won-matches">
-            <div class="won-match-row">
-              <span class="won-match-clash">Liverpool vs Aston Villa</span>
-              <span class="won-pick">Liverpool gagne & +2.5 buts @2.10</span>
-            </div>
-            <div class="won-match-row">
-              <span class="won-match-clash">Barcelone vs Séville</span>
-              <span class="won-pick">Barcelone gagne @1.42</span>
-            </div>
-          </div>
-          <div class="won-footer">
-            <div>
-              <span class="won-lbl">Cote Validée :</span>
-              <strong class="won-odd">2.98</strong>
-            </div>
-            <div class="won-gain-tag">+149.00€ pour 50€</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         NOUVELLE SECTION : ANALYSE TACTIQUE & CHOC DE LA SEMAINE (H2H DEEP DIVE)
-         ========================================================================== -->
-    <section class="section-wrapper" id="match-analysis-section">
-      <div class="section-head">
-        <div>
-          <div class="section-badge-pill">
-            <span>⚔️</span> LE GRAND CHOC EUROPÉEN
-          </div>
-          <h2 class="section-title">
-            <span>🎯</span> Décryptage Tactique & Historique Face-à-Face
-          </h2>
-          <p class="section-subtitle">
-            Analyse approfondie du sommet européen entre les deux géants : face-à-face, métriques xG et conseil du tipster.
-          </p>
-        </div>
-      </div>
-
-      <div class="h2h-analysis-card">
-        <div class="specular-glare"></div>
-
-        <!-- Clash Header -->
-        <div class="h2h-clash-banner">
-          <div class="h2h-team-col">
-            <img src="https://media.api-sports.io/football/teams/541.png" alt="Real Madrid" class="h2h-crest" />
-            <div class="h2h-team-title">Real Madrid</div>
-            <div class="h2h-form-badges">
-              <span class="form-pill win">V</span>
-              <span class="form-pill win">V</span>
-              <span class="form-pill win">V</span>
-              <span class="form-pill draw">N</span>
-              <span class="form-pill win">V</span>
-            </div>
-          </div>
-
-          <div class="h2h-center-col">
-            <span class="h2h-comp-badge">LIGUE DES CHAMPIONS • 1/4 FINALE</span>
-            <div class="h2h-vs-sign">VS</div>
-            <div class="h2h-venue-info">Santiago Bernabéu • 21h00</div>
-            <div class="h2h-odds-pill">Cote 1: <strong>2.10</strong> • N: <strong>3.45</strong> • 2: <strong>3.20</strong></div>
-          </div>
-
-          <div class="h2h-team-col">
-            <img src="https://media.api-sports.io/football/teams/50.png" alt="Manchester City" class="h2h-crest" />
-            <div class="h2h-team-title">Manchester City</div>
-            <div class="h2h-form-badges">
-              <span class="form-pill win">V</span>
-              <span class="form-pill draw">N</span>
-              <span class="form-pill win">V</span>
-              <span class="form-pill win">V</span>
-              <span class="form-pill loss">D</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Detailed Stats Comparison Grid -->
-        <div class="h2h-details-grid">
-          <!-- Left: Head to Head Last 5 Direct Clashes -->
-          <div class="h2h-box">
-            <h4 class="h2h-box-title">📋 5 Dernières Confrontations Directes</h4>
-            <div class="h2h-history-list">
-              <div class="history-item">
-                <span class="history-date">17 Avr 2024</span>
-                <span class="history-teams">Man City 1 - 1 Real Madrid (tab 3-4)</span>
-                <span class="history-tag">C1</span>
-              </div>
-              <div class="history-item">
-                <span class="history-date">09 Avr 2024</span>
-                <span class="history-teams">Real Madrid 3 - 3 Man City</span>
-                <span class="history-tag">C1</span>
-              </div>
-              <div class="history-item">
-                <span class="history-date">17 Mai 2023</span>
-                <span class="history-teams">Man City 4 - 0 Real Madrid</span>
-                <span class="history-tag">C1</span>
-              </div>
-              <div class="history-item">
-                <span class="history-date">09 Mai 2023</span>
-                <span class="history-teams">Real Madrid 1 - 1 Man City</span>
-                <span class="history-tag">C1</span>
-              </div>
-              <div class="history-item">
-                <span class="history-date">04 Mai 2022</span>
-                <span class="history-teams">Real Madrid 3 - 1 Man City (a.p.)</span>
-                <span class="history-tag">C1</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Middle: Radar / Probability Bars -->
-          <div class="h2h-box">
-            <h4 class="h2h-box-title">📊 Probabilités & Métriques Avancées</h4>
-            
-            <div class="metric-row">
-              <div class="metric-header">
-                <span>Victoire Real Madrid</span>
-                <strong>46%</strong>
-              </div>
-              <div class="progress-track"><div class="progress-bar-fill" style="width: 46%;"></div></div>
-            </div>
-
-            <div class="metric-row">
-              <div class="metric-header">
-                <span>Match Nul</span>
-                <strong>28%</strong>
-              </div>
-              <div class="progress-track"><div class="progress-bar-fill" style="width: 28%; background: #9A63FF;"></div></div>
-            </div>
-
-            <div class="metric-row">
-              <div class="metric-header">
-                <span>Victoire Manchester City</span>
-                <strong>26%</strong>
-              </div>
-              <div class="progress-track"><div class="progress-bar-fill" style="width: 26%;"></div></div>
-            </div>
-
-            <div class="metric-row">
-              <div class="metric-header">
-                <span>Les 2 Équipes Marquent (BTTS)</span>
-                <strong class="text-green">78%</strong>
-              </div>
-              <div class="progress-track"><div class="progress-bar-fill" style="width: 78%; background: var(--c-green-safe);"></div></div>
-            </div>
-
-            <div class="metric-row">
-              <div class="metric-header">
-                <span>Expected Goals (xG projetés)</span>
-                <span>2.15 vs 1.68</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right: Tipster Verdict -->
-          <div class="h2h-box tipster-box">
-            <h4 class="h2h-box-title">🧠 Avis de l'Expert & Value Bet</h4>
-            <p class="tipster-text">
-              Historiquement, ces deux équipes se livrent des duels très ouverts avec une moyenne de <strong>3.6 buts</strong> par match. À Bernabéu, le Real est invaincu lors de ses 18 derniers rendez-vous européens.
-            </p>
-            <div class="tipster-recommendation">
-              <div class="tip-rec-label">PRONOSTIC CONSEILLÉ :</div>
-              <div class="tip-rec-bet">Real Madrid ou Nul & Les 2 Équipes Marquent</div>
-              <div class="tip-rec-odd">Cote Recommandée : <strong>2.05</strong></div>
-            </div>
-            <button class="btn-neon-primary" data-action="open-auth" data-mode="register" style="width: 100%; justify-content: center; margin-top: 14px;">
-              <span>Recevoir l'Analyse VIP Complète →</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         NOUVELLE SECTION : CALCULATEUR DE BANKROLL & SIMULATEUR DE GAINS
-         ========================================================================== -->
-    <section class="section-wrapper" id="bankroll-calc-section">
-      <div class="section-head">
-        <div>
-          <div class="section-badge-pill">
-            <span>🧮</span> GESTION DE CAPITAL PRO
-          </div>
-          <h2 class="section-title">
-            <span>💰</span> Simulateur de Bankroll & Profits
-          </h2>
-          <p class="section-subtitle">
-            Simulez la progression de votre capital en appliquant une stratégie de mise rigoureuse (unités conseillées).
-          </p>
-        </div>
-      </div>
-
-      <div class="bankroll-calc-card">
-        <div class="specular-glare"></div>
-
-        <div class="calc-grid">
-          <div class="calc-inputs-col">
-            <div class="calc-field">
-              <label for="bankroll-input">Votre Capital de Départ (€) :</label>
-              <input type="number" id="bankroll-input" class="admin-input" value="500" min="50" max="50000" step="50" />
-            </div>
-
-            <div class="calc-field">
-              <label for="risk-select">Stratégie de Mise par Pari :</label>
-              <select id="risk-select" class="admin-select">
-                <option value="0.02" selected>Prudente (2% du capital - 1 Unité)</option>
-                <option value="0.05">Équilibrée (5% du capital - Recommandée)</option>
-                <option value="0.08">Offensive (8% du capital)</option>
-              </select>
-            </div>
-
-            <div class="calc-field">
-              <label for="avg-odd-input">Cote Moyenne Visée :</label>
-              <input type="number" id="avg-odd-input" class="admin-input" value="3.40" step="0.1" min="1.3" max="20" />
-            </div>
-
-            <div class="calc-field">
-              <label for="winrate-slider">Taux de Réussite Estimé : <strong id="winrate-label" style="color:var(--c-violet-light);">80%</strong></label>
-              <input type="range" id="winrate-slider" class="custom-range" min="50" max="95" value="80" />
-            </div>
-          </div>
-
-          <div class="calc-results-col">
-            <h4 class="calc-res-title">Projection sur 30 Paris Joués</h4>
-            
-            <div class="calc-kpi-row">
-              <div class="calc-kpi-unit">
-                <span class="calc-kpi-label">Mise par coupon</span>
-                <span class="calc-kpi-val" id="res-stake-unit">10.00€</span>
-              </div>
-              <div class="calc-kpi-unit">
-                <span class="calc-kpi-label">Bénéfice Net Projeté</span>
-                <span class="calc-kpi-val text-green" id="res-net-profit">+516.00€</span>
-              </div>
-              <div class="calc-kpi-unit">
-                <span class="calc-kpi-label">Bankroll Finale</span>
-                <span class="calc-kpi-val" id="res-final-bankroll">1,016.00€</span>
-              </div>
-              <div class="calc-kpi-unit">
-                <span class="calc-kpi-label">Rendement (ROI)</span>
-                <span class="calc-kpi-val text-green" id="res-calc-roi">+103.2%</span>
-              </div>
-            </div>
-
-            <div class="calc-note">
-              <span>💡</span>
-              <p>Tous les coupons VIP FASTSporty sont calibrés pour respecter la règle de mise à 5% maximum afin d'éviter tout risque de banqueroute.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         SCROLL-DRIVEN EXPANDING SECTION (Inspired by MCP 21 scroll expansion)
-         As user scrolls down, this showcase card smoothly expands into full view
-         ========================================================================== -->
-    <section class="expand-section-container" id="scroll-expand-section">
-      <div class="expandable-card-wrapper">
-        <div class="expandable-card" id="expandable-vip-card">
-          <div class="specular-glare"></div>
-
-          <div class="expand-card-header">
-            <div class="expand-tag">
-              <span>💎</span> ANALYSE VIP PRIVILÈGE & SIMULATEUR ROI
-            </div>
-            <div style="font-size: 13px; color: #a7a3c4;">
-              Algorithme xG + Forme + Arbitrage
-            </div>
-          </div>
-
-          <div class="expand-grid">
-            <div class="expand-left">
-              <h3>Simulez vos gains avec le Combiné VIP</h3>
-              <p>
-                Ajustez votre mise ci-dessous pour calculer instantanément votre retour sur investissement basé sur la cote combinée du jour (<strong>Cote 5.45</strong>).
-              </p>
-
-              <!-- Interactive Slider -->
-              <div class="interactive-slider-box">
-                <div class="slider-label-row">
-                  <span>Votre mise :</span>
-                  <span class="slider-val-highlight" id="roi-stake-val">50€</span>
-                </div>
-                <input type="range" min="10" max="500" step="10" value="50" class="custom-range" id="roi-stake-slider" />
-                <div class="gain-result-box">
-                  <span style="font-size: 13px; color: var(--text-secondary);">Gain net estimé :</span>
-                  <span class="gain-amount" id="roi-gain-val">272.50€</span>
-                </div>
-              </div>
-
-              <div style="display: flex; gap: 12px; align-items: center;">
-                <button class="btn-neon-primary" data-action="open-auth" data-mode="register">
-                  <span>Accéder au VIP Maintenant</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </button>
-                <span style="font-size: 12px; color: var(--text-muted);">Garantie remboursement si le combiné échoue</span>
-              </div>
-            </div>
-
-            <!-- Visual Preview Card -->
-            <div class="expand-right-preview">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-                <span style="font-size: 12px; font-weight: 700; color: #B07CFF;">PREDICTION RADAR IA</span>
-                <span style="font-size: 11px; background: rgba(34, 197, 94, 0.2); color: #4ade80; padding: 2px 8px; border-radius: 4px;">CONFIANCE 94%</span>
-              </div>
-
-              <div style="font-size: 14px; font-weight: 700; margin-bottom: 8px;">Real Madrid vs Manchester City</div>
-              <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 14px;">Santiago Bernabéu • 21h00</div>
-
-              <div style="display: flex; flex-direction: column; gap: 8px; font-size: 12px;">
-                <div style="display: flex; justify-content: space-between;">
-                  <span>Probabilité Victoire Domicile</span>
-                  <strong style="color: #A78BFA;">58%</strong>
-                </div>
-                <div class="progress-track" style="height: 4px;">
-                  <div class="progress-bar-fill" style="width: 58%;"></div>
-                </div>
-
-                <div style="display: flex; justify-content: space-between; margin-top: 4px;">
-                  <span>Probabilité Plus de 2.5 Buts</span>
-                  <strong style="color: #4ade80;">74%</strong>
-                </div>
-                <div class="progress-track" style="height: 4px;">
-                  <div class="progress-bar-fill" style="width: 74%; background: #22c55e;"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         COUPONS DE PARIS (AVEC FLOU VIP & DÉBLOCAGE)
-         Exigence clé de l'utilisateur :
-         "Côté administrateur on mettra des coupons que l'on va bloquer, avec le flux/flou
-         ajouté dessus pour que les utilisateurs ne puissent pas voir le contenu,
-         seulement après avoir payé un abonnement"
-         ========================================================================== -->
-    <section class="section-wrapper" id="coupons-section">
-      <div class="section-head">
-        <div>
-          <h2 class="section-title">
-            <span>🎫</span> Coupons de Paris & Pronostics
-          </h2>
-          <p class="section-subtitle">
-            Consultez nos sélections publiques gratuites ou débloquez nos combinés VIP exclusifs.
-          </p>
-        </div>
-
-        <!-- Simulation Switch for Testing VIP Mode -->
-        <label class="vip-simulation-toggle" title="Permet de tester l'affichage des coupons avec ou sans le flou">
-          <input type="checkbox" id="vip-simulation-toggle-input" style="accent-color: #8b5cf6;" />
-          <span>👁️ Simuler Utilisateur VIP (Débloquer tout)</span>
-        </label>
-      </div>
-
-      <!-- Filters Bar -->
-      <div class="coupons-filter-bar">
-        <div class="filter-pills-list">
-          <button class="filter-pill active" data-filter="all">Tous les coupons</button>
-          <button class="filter-pill" data-filter="vip">🔒 Coupons VIP (Floutés)</button>
-          <button class="filter-pill" data-filter="free">🆓 Coupons Gratuits</button>
-          <button class="filter-pill" data-filter="won">🏆 Historique Gagnants</button>
-        </div>
-      </div>
-
-      <!-- Dynamic Grid of Coupons -->
-      <div class="coupons-grid" id="coupons-grid-container">
-        <!-- Rendered dynamically via src/main.js -->
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         SECTION ABONNEMENTS ET TARIFS
-         ========================================================================== -->
-    <section class="section-wrapper" id="pricing-section">
-      <div class="section-head" style="justify-content: center; text-align: center;">
-        <div>
-          <h2 class="section-title" style="justify-content: center;">
-            <span>⚡</span> Choisissez Votre Pass VIP FASTSporty
-          </h2>
-          <p class="section-subtitle">
-            Accédez à l'intégralité des coupons sans aucun flou, aux alertes Telegram et à l'IA en temps réel.
-          </p>
-        </div>
-      </div>
-
-      <div class="pricing-grid">
-        <!-- Plan 1 -->
-        <div class="pricing-card">
-          <div class="pricing-title">Pass Coupon Unique</div>
-          <div class="pricing-desc">Débloquez un seul combiné VIP de votre choix.</div>
-          <div class="pricing-amount-row">
-            <span class="price-currency">€</span>
-            <span class="price-number">9.99</span>
-            <span class="price-period">/ coupon</span>
-          </div>
-          <ul class="features-list">
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>1 Coupon VIP sans aucun flou</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Cote garantie > 4.50</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Remboursement si non validé</span>
-            </li>
-          </ul>
-          <button class="btn-glass" data-action="open-auth" data-mode="register">Acheter ce Pass</button>
-        </div>
-
-        <!-- Plan 2 (Popular with radiant neon) -->
-        <div class="pricing-card popular">
-          <div class="popular-ribbon">⭐ LE PLUS CHOISI</div>
-          <div class="specular-glare"></div>
-          <div class="pricing-title">VIP Mensuel Illimité</div>
-          <div class="pricing-desc">Tous les coupons débloqués chaque jour en continu.</div>
-          <div class="pricing-amount-row">
-            <span class="price-currency">€</span>
-            <span class="price-number">29.99</span>
-            <span class="price-period">/ mois</span>
-          </div>
-          <ul class="features-list">
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Tous les coupons VIP débloqués (100% visible)</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Canal Privé Telegram & Alertes Live</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Gestion de Bankroll & Conseils Experts</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Sans engagement, résiliable en 1 clic</span>
-            </li>
-          </ul>
-          <button class="btn-neon-primary" data-action="open-auth" data-mode="register">Rejoindre le VIP Maintenant</button>
-        </div>
-
-        <!-- Plan 3 -->
-        <div class="pricing-card">
-          <div class="pricing-title">VIP Saison Pro (3 Mois)</div>
-          <div class="pricing-desc">L'offre économique pour les parieurs sérieux.</div>
-          <div class="pricing-amount-row">
-            <span class="price-currency">€</span>
-            <span class="price-number">69.99</span>
-            <span class="price-period">/ trimestre</span>
-          </div>
-          <ul class="features-list">
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Économisez 30% sur votre abonnement</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Accès direct au canal privé des tipsters</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Support prioritaire VIP 7j/7</span>
-            </li>
-          </ul>
-          <button class="btn-glass" data-action="open-auth" data-mode="register">Choisir ce Pass Pro</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         NOUVELLE SECTION : CANAL PRIVÉ VIP TELEGRAM & ALERTES LIVE
-         ========================================================================== -->
-    <section class="section-wrapper" id="telegram-section">
-      <div class="telegram-banner-card">
-        <div class="specular-glare"></div>
-
-        <div class="telegram-content-col">
-          <div class="section-badge-pill" style="background: rgba(36, 161, 222, 0.15); border-color: #24A1DE; color: #38bdf8;">
-            <span>✈️</span> FLUX DIRECT TELEGRAM VIP
-          </div>
-          <h2 class="telegram-title">
-            Rejoignez Plus de 15 400 Parieurs sur Notre Canal Privé
-          </h2>
-          <p class="telegram-desc">
-            Ne ratez plus aucun value bet. Recevez directement sur votre smartphone nos notifications de cotes en temps réel, les compos officielles et les alertes but en live.
-          </p>
-
-          <ul class="telegram-features">
-            <li><span>⚡</span> Alertes Live en moins de 3 secondes avant la chute des cotes</li>
-            <li><span>📋</span> Codes combinés 1xBet et Betclic prêts à copier en 1 clic</li>
-            <li><span>📊</span> Conseils de cashout en direct pour sécuriser vos gains</li>
-            <li><span>💬</span> Accès aux débriefings d'après-match par nos analystes</li>
-          </ul>
-
-          <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:24px;">
-            <a href="https://t.me/" target="_blank" rel="noopener" class="btn-telegram-primary">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
-              <span>Rejoindre le Canal Telegram VIP</span>
-            </a>
-            <button class="btn-glass" data-action="open-auth" data-mode="register">
-              <span>Voir les Preuves & Retraits Membres</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Phone Mockup Preview of Telegram Messages -->
-        <div class="telegram-mockup-col">
-          <div class="phone-chat-card">
-            <div class="chat-header">
-              <div class="chat-avatar">FS</div>
-              <div>
-                <div class="chat-name">FASTSporty VIP • Alertes Live</div>
-                <div class="chat-online">15,420 membres en ligne</div>
-              </div>
-            </div>
-
-            <div class="chat-messages-body">
-              <div class="chat-msg">
-                <span class="chat-msg-time">18:42</span>
-                <p><strong>🚨 ALERTE DIRECTE :</strong> Arsenal pousse fort (14 tirs). Le but arrive d'ici 10 minutes !</p>
-                <div class="chat-bubble-highlight">Conseil : Plus de 0.5 But MT @ 1.95 (Mise 1 Unité)</div>
-              </div>
-
-              <div class="chat-msg success">
-                <span class="chat-msg-time">18:51</span>
-                <p><strong>✅ BOOM ! BUT ARSENAL (41') !</strong></p>
-                <p>Cote 1.95 validée en 9 minutes chrono ! +95€ de bénéfice net. Bravo aux parieurs réactifs ! 🔥</p>
-              </div>
-
-              <div class="chat-msg">
-                <span class="chat-msg-time">19:30</span>
-                <p><strong>🎫 COMBINÉ SOIRÉE PUBLIÉ :</strong> Real Madrid + Bayern Munich (Cote 4.85). Code 1xBet : <code>BK-9482</code>. À placer avant 20h45.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         NOUVELLE SECTION : FOIRE AUX QUESTIONS & JEU RESPONSABLE (18+)
-         ========================================================================== -->
-    <section class="section-wrapper" id="faq-section">
-      <div class="section-head" style="text-align: center; justify-content: center;">
-        <div>
-          <div class="section-badge-pill" style="margin: 0 auto 10px;">
-            <span>❓</span> TOUT COMPRENDRE EN 2 MINUTES
-          </div>
-          <h2 class="section-title" style="justify-content: center;">
-            <span>❓</span> Questions Fréquemment Posées
-          </h2>
-          <p class="section-subtitle">
-            Toutes les réponses à vos questions pour parier sereinement et avec méthode.
-          </p>
-        </div>
-      </div>
-
-      <div class="faq-accordion-container">
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Comment utiliser le code coupon sur 1xBet ou Betclic ?</span>
-            <span class="faq-chevron">▾</span>
-          </summary>
-          <div class="faq-answer">
-            Sur chaque coupon de notre site, un bouton « Copier le code » est présent. Rendez-vous sur l'application de votre bookmaker (1xBet, Betclic, Winamax), ouvrez le bordereau de paris, cliquez sur « Télécharger le bordereau » et collez le code. Vos matchs et cotes se chargeront automatiquement en 1 seconde !
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>À quelle heure sont publiés les combinés VIP du jour ?</span>
-            <span class="faq-chevron">▾</span>
-          </summary>
-          <div class="faq-answer">
-            Nos coupons principaux sont mis en ligne chaque jour entre 11h00 et 14h00 pour les matchs de l'après-midi, et avant 18h30 pour les grands soirs de Ligue des Champions. Une notification est automatiquement envoyée sur notre Telegram.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Qu'est-ce que le ROI et comment est-il calculé ?</span>
-            <span class="faq-chevron">▾</span>
-          </summary>
-          <div class="faq-answer">
-            Le ROI (Return On Investment) mesure le bénéfice net généré par rapport au montant total misé. Un ROI de +28% signifie que pour chaque 100€ misés au cumulé sur nos sélections, vous avez généré 28€ de gain net pur.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Puis-je résilier mon abonnement VIP facilement ?</span>
-            <span class="faq-chevron">▾</span>
-          </summary>
-          <div class="faq-answer">
-            Oui, absolument. Tous nos abonnements sont sans aucun engagement de durée. Vous pouvez annuler en 1 seul clic depuis votre espace membre ou en écrivant à notre support 7j/7.
-          </div>
-        </details>
-      </div>
-
-      <!-- Responsible Gaming Official Banner -->
-      <div class="responsible-gaming-banner">
-        <div class="rg-badge-18">18+</div>
-        <div class="rg-text">
-          <strong>JOUER COMPORTE DES RISQUES : ENDETTEMENT, ISOLEMENT, DÉPENDANCE.</strong>
-          <p>Les paris sportifs doivent rester un divertissement. Ne misez jamais d'argent dont vous pourriez avoir besoin pour vos dépenses essentielles. Pour être aidé, appelez le <strong>09 74 75 13 13</strong> (appel non surtaxé).</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Floating Interactive Bet Slip Widget (Docked Bottom Right) -->
-    <div class="floating-bet-slip-container" id="floating-bet-slip"></div>
-
-  </main>
-
-  <!-- ==========================================================================
-       PORTAIL ADMINISTRATEUR
-       Permet à l'admin de :
-       1. Rechercher un club avec autocomplétion & logo officiel
-       2. Créer des coupons avec le switch FLOU VIP
-       3. Valider les résultats (Gagné / Perdu)
-       ========================================================================== -->
-  <section id="admin-portal-view" aria-label="Portail d'administration">
-    <div class="admin-header-row">
-      <div>
-        <div class="admin-title-badge">ESPACE GESTIONNAIRE FASTSPORTY</div>
-        <h2 style="font-family: var(--font-heading); font-size: 32px; font-weight: 800; margin-top: 6px;">
-          Tableau de Bord Administrateur
-        </h2>
-        <p style="color: var(--text-secondary); font-size: 14px;">
-          Générez de nouveaux coupons avec logos de clubs, appliquez le flou VIP et mettez à jour les statuts en direct.
-        </p>
-      </div>
-      <button class="btn-glass" id="admin-back-user-btn" onclick="document.getElementById('portal-switch-user').click();">
-        <span>← Revenir au Portail Utilisateur</span>
-      </button>
-    </div>
-
-    <!-- Admin KPI Stats -->
-    <div class="admin-stats-grid">
-      <div class="stat-card">
-        <div class="stat-number accent">4</div>
-        <div class="stat-label">Coupons Actifs sur le site</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">1,280</div>
-        <div class="stat-label">Abonnés VIP Mensuels</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number accent">87.4%</div>
-        <div class="stat-label">Taux Gagnants ce mois</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">38,400€</div>
-        <div class="stat-label">Revenus Abonnements</div>
-      </div>
-    </div>
-
-    <!-- Coupon Builder Form -->
-    <div class="admin-panel-card">
-      <div class="specular-glare"></div>
-      <h3 class="panel-title">
-        <span>⚽</span> Créer un Nouveau Coupon de Paris (avec Logos Automatiques)
-      </h3>
-
-      <form id="admin-create-coupon-form">
-        <!-- Clash Selector with Club Search Autocomplete -->
-        <div class="admin-form-grid">
-          <!-- Home Club Search -->
-          <div class="field-group club-search-field-container">
-            <label for="admin-home-club-input">Club Domicile (Recherchez par nom)</label>
-            <input type="text" id="admin-home-club-input" class="admin-input" placeholder="Tapez ex: Real Madrid, PSG, Arsenal..." value="Real Madrid" autocomplete="off" />
-            <div class="club-results-dropdown" id="admin-home-club-dropdown"></div>
-          </div>
-
-          <!-- Away Club Search -->
-          <div class="field-group club-search-field-container">
-            <label for="admin-away-club-input">Club Extérieur (Recherchez par nom)</label>
-            <input type="text" id="admin-away-club-input" class="admin-input" placeholder="Tapez ex: Man City, Chelsea, Bayern..." value="Manchester City" autocomplete="off" />
-            <div class="club-results-dropdown" id="admin-away-club-dropdown"></div>
-          </div>
-        </div>
-
-        <!-- Selected Preview Badge -->
-        <div class="selected-clash-preview">
-          <div class="club-preview-unit">
-            <img id="admin-home-preview-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/240px-Real_Madrid_CF.svg.png" alt="Domicile" />
-            <span id="admin-home-preview-name" style="font-weight: 700; font-size: 14px;">Real Madrid</span>
-          </div>
-
-          <div style="font-family: var(--font-heading); font-size: 20px; font-weight: 900; color: #7C4DFF;">VS</div>
-
-          <div class="club-preview-unit">
-            <img id="admin-away-preview-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/240px-Manchester_City_FC_badge.svg.png" alt="Extérieur" />
-            <span id="admin-away-preview-name" style="font-weight: 700; font-size: 14px;">Manchester City</span>
-          </div>
-        </div>
-
-        <!-- Details -->
-        <div class="admin-form-grid">
-          <div class="field-group">
-            <label for="coupon-title-input">Titre du Coupon</label>
-            <input type="text" id="coupon-title-input" class="admin-input" placeholder="ex: COMBINÉ VIP DU SOIR" value="COMBINÉ GOLD CHAMPIONS" required />
-          </div>
-
-          <div class="field-group">
-            <label for="coupon-league-input">Compétition</label>
-            <select id="coupon-league-input" class="admin-select">
-              <option value="Ligue des Champions">Ligue des Champions</option>
-              <option value="Premier League">Premier League</option>
-              <option value="La Liga">La Liga</option>
-              <option value="Ligue 1">Ligue 1</option>
-              <option value="Serie A">Serie A</option>
-              <option value="Bundesliga">Bundesliga</option>
-            </select>
-          </div>
-
-          <div class="field-group">
-            <label for="coupon-prediction-input">Pronostic Recommandé</label>
-            <input type="text" id="coupon-prediction-input" class="admin-input" placeholder="ex: Victoire Real Madrid & +2.5 buts" value="Real Madrid gagne ou Nul & Les 2 marquent" required />
-          </div>
-
-          <div class="field-group">
-            <label for="coupon-odd-input">Cote Totale</label>
-            <input type="number" step="0.05" id="coupon-odd-input" class="admin-input" placeholder="ex: 2.85" value="2.85" required />
-          </div>
-
-          <div class="field-group">
-            <label for="coupon-conf-input">Indice de Confiance IA (%)</label>
-            <input type="number" min="50" max="99" id="coupon-conf-input" class="admin-input" value="93" />
-          </div>
-
-          <div class="field-group">
-            <label for="coupon-time-input">Date & Heure du Match</label>
-            <input type="text" id="coupon-time-input" class="admin-input" value="Ce Soir, 21h00" />
-          </div>
-        </div>
-
-        <!-- Switch for Flou VIP Lock -->
-        <div class="switch-lock-row">
-          <div>
-            <div class="switch-label-title">🔒 Verrouiller le Coupon (Appliquer le Flou VIP)</div>
-            <div class="switch-label-desc">
-              Si activé, les non-abonnés verront le coupon flouté avec l'invitation à payer ou s'abonner.
-            </div>
-          </div>
-          <label class="toggle-switch-container">
-            <input type="checkbox" id="coupon-lock-toggle" checked />
-            <span class="slider-round"></span>
-          </label>
-        </div>
-
-        <button type="submit" class="btn-neon-primary" style="width: 100%; justify-content: center; padding: 14px; font-size: 15px;">
-          <span>🚀 Publier le Coupon sur le Portail Utilisateur</span>
-        </button>
-      </form>
-    </div>
-
-    <!-- Coupons Management Table -->
-    <div class="admin-panel-card">
-      <h3 class="panel-title">
-        <span>📋</span> Gestion des Coupons en Ligne & Validation des Résultats
-      </h3>
-      <div style="overflow-x: auto;">
-        <table class="admin-table">
-          <thead>
-            <tr>
-              <th>Coupon</th>
-              <th>Affiche</th>
-              <th>Cote</th>
-              <th>Visibilité</th>
-              <th>Statut Résultat</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody id="admin-coupons-table-body">
-            <!-- Populated via adminPortal.js -->
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
+      <!-- ==========================================================================
        MODAL DE CONNEXION / INSCRIPTION
        RÉPLIQUE EXACTE ET CONFORME DU DESIGN FOURNI PAR L'UTILISATEUR
        - Logo FASTSporty AI avec ailes de vitesse
        - SMART PREDICTIONS. REAL SPORTS.
        - Pill switch CONNEXION / INSCRIPTION
        - Carte glassmorphism avec éclat spéculaire dans l'angle supérieur droit
-       - Champs Adresse e-mail et Mot de passe avec icône œil
+       - Champs Adresse e-mail et Mot de passe avec icône Å“il
        - Bouton dégradé violet néon "Se connecter →"
        - Séparateur ou
        - Boutons Continuer avec Google et Continuer avec Apple
        ========================================================================== -->
-  <div class="modal-backdrop" id="auth-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
-    <div class="auth-modal-wrapper">
-      
-      <!-- Close Button -->
-      <button class="modal-close-btn" id="auth-modal-close" aria-label="Fermer la boîte de dialogue">✕</button>
+      <div class="modal-backdrop" id="auth-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+        <!-- Halos d'ambiance néon discrets et atmosphériques dans les coins -->
+        <div class="modal-ambient-neon-tr" aria-hidden="true"></div>
+        <div class="modal-ambient-neon-bl" aria-hidden="true"></div>
 
-      <!-- Brand Header -->
-      <div class="preloader-brand" style="margin-bottom: 4px;">
-        <div class="brand-icon-svg">
-          <svg width="38" height="28" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 6L28 6L23 12L0 12L4 6Z" fill="#5B2BE0" />
-            <path d="M9 14L33 14L28 20L5 20L9 14Z" fill="#7C4DFF" />
-            <path d="M14 22L38 22L33 28L10 28L14 22Z" fill="#B07CFF" />
-          </svg>
-        </div>
-        <div class="brand-logo-text">
-          <span class="brand-fast">FAST</span><span class="brand-sporty">Sporty</span><span class="brand-ai">AI</span>
-        </div>
-      </div>
-      <div class="brand-subtitle">SMART PREDICTIONS. REAL SPORTS.</div>
+        <div class="auth-modal-wrapper">
 
-      <!-- Pill Tab Switch: CONNEXION / INSCRIPTION -->
-      <div class="auth-pill-switch" role="tablist">
-        <button class="auth-tab-btn active" id="auth-tab-login" role="tab" aria-selected="true">CONNEXION</button>
-        <button class="auth-tab-btn" id="auth-tab-register" role="tab" aria-selected="false">INSCRIPTION</button>
-      </div>
+          <!-- Close Button -->
+          <button class="modal-close-btn" id="auth-modal-close" aria-label="Fermer la boîte de dialogue"><i
+              class="ph-bold ph-x"></i></button>
 
-      <!-- Glassmorphic Card with Top-Right Specular Glare -->
-      <div class="auth-glass-card">
-        <div class="specular-glare"></div>
+          <!-- Brand Header -->
+          <div class="preloader-brand" style="margin-bottom: 8px;">
+            <img src="/logo.png?v=3" alt="FAST Sporty" class="auth-logo-img" />
+          </div>
+          <div class="brand-subtitle">SMART PREDICTIONS. REAL SPORTS.</div>
 
-        <h3 class="auth-card-title" id="auth-card-title">Connexion</h3>
-        <p class="auth-card-sub" id="auth-card-sub">Accédez à vos prédictions et vivez le sport autrement.</p>
-
-        <form class="auth-form" id="auth-form-element">
-          <!-- Email Input -->
-          <div class="form-input-box">
-            <span class="input-icon-left">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-              </svg>
-            </span>
-            <input type="email" id="auth-email-input" class="auth-text-input" placeholder="Adresse e-mail" required />
+          <!-- Pill Tab Switch: CONNEXION / INSCRIPTION -->
+          <div class="auth-pill-switch" role="tablist">
+            <button class="auth-tab-btn active" id="auth-tab-login" role="tab" aria-selected="true">CONNEXION</button>
+            <button class="auth-tab-btn" id="auth-tab-register" role="tab" aria-selected="false">INSCRIPTION</button>
           </div>
 
-          <!-- Password Input -->
-          <div class="form-input-box">
-            <span class="input-icon-left">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-              </svg>
-            </span>
-            <input type="password" id="auth-password-input" class="auth-text-input" placeholder="Mot de passe" required />
-            <button type="button" class="password-toggle-eye" id="auth-password-toggle" aria-label="Afficher ou masquer le mot de passe">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
-                <circle cx="12" cy="12" r="3"></circle>
-              </svg>
-            </button>
+          <!-- Glassmorphic Card avec fond sombre haute fidélité -->
+          <div class="auth-glass-card">
+            <h3 class="auth-card-title" id="auth-card-title">Connexion</h3>
+            <p class="auth-card-sub" id="auth-card-sub">Accédez à vos prédictions et vivez le sport autrement.</p>
+
+            <form class="auth-form" id="auth-form-element">
+              <!-- Username Input (Registration mode only) -->
+              <div class="form-input-box" id="auth-username-box" style="display: none;">
+                <span class="input-icon-left">
+                  <i class="ph-bold ph-user" style="font-size: 18px; color: var(--c-text-muted);"></i>
+                </span>
+                <input type="text" id="auth-username-input" class="auth-text-input"
+                  placeholder="Nom d'utilisateur / Pseudo" data-i18n-placeholder="auth.username_placeholder"
+                  autocomplete="username" />
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-input-box">
+                <span class="input-icon-left">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </span>
+                <input type="text" id="auth-email-input" class="auth-text-input" placeholder="Adresse e-mail ou Nom d'utilisateur"
+                  data-i18n-placeholder="auth.email_placeholder" required autocomplete="username" />
+              </div>
+
+              <!-- Password Input -->
+              <div class="form-input-box">
+                <span class="input-icon-left">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </span>
+                <input type="password" id="auth-password-input" class="auth-text-input" placeholder="Mot de passe"
+                  required />
+                <button type="button" class="password-toggle-eye" id="auth-password-toggle"
+                  aria-label="Afficher ou masquer le mot de passe">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Options row: Remember me & Forgot Password -->
+              <div class="auth-options-row">
+                <label class="remember-label">
+                  <input type="checkbox" class="remember-checkbox" checked />
+                  <span>Se souvenir de moi</span>
+                </label>
+                <a href="#" class="forgot-link" id="auth-forgot-link">Mot de passe oublié ?</a>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn-submit-auth" id="auth-submit-btn">
+                <span id="auth-submit-text">Se connecter →</span>
+              </button>
+            </form>
+
+            <!-- Divider -->
+            <div class="auth-divider-row">
+              <span>ou</span>
+            </div>
+
+            <!-- Social Buttons -->
+            <div class="social-buttons-row">
+              <button class="btn-social" id="btn-auth-google" type="button">
+                <!-- Google G Logo -->
+                <svg width="16" height="16" viewBox="0 0 24 24">
+                  <path fill="#4285F4"
+                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                  <path fill="#34A853"
+                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                  <path fill="#FBBC05"
+                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                  <path fill="#EA4335"
+                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                </svg>
+                <span>Continuer avec Google</span>
+              </button>
+
+              <button class="btn-social" id="btn-auth-apple" type="button">
+                <!-- Apple Logo -->
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffffff">
+                  <path
+                    d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.85-.9.04-2 .6-2.63 1.34-.56.64-.99 1.72-.88 2.74 1.01.08 2.01-.51 2.59-1.23" />
+                </svg>
+                <span>Continuer avec Apple</span>
+              </button>
+            </div>
+
+            <!-- Switch mode link -->
+            <div class="auth-bottom-text">
+              <span id="auth-switch-link">Pas encore membre ? <a href="#">Créer un compte</a></span>
+            </div>
+
           </div>
 
-          <!-- Options row: Remember me & Forgot Password -->
-          <div class="auth-options-row">
-            <label class="remember-label">
-              <input type="checkbox" class="remember-checkbox" checked />
-              <span>Se souvenir de moi</span>
-            </label>
-            <a href="#" class="forgot-link" onclick="event.preventDefault(); alert('Un lien de réinitialisation vous a été envoyé.');">Mot de passe oublié ?</a>
+        </div>
+      </div>
+
+      <!-- Toast Notification Container -->
+      <div class="toast-container" id="toast-container"></div>
+
+      <!-- ==========================================================================
+       NOUVEAU FOOTER OFFICIEL FASTSPORTY AI (INSPIRÉ 1WIN)
+       - Barre supérieure : Assistance 24/7 (photo conseillère + bouton), Offres commerciales, Programme partenaire
+       - Grille centrale : Liens Informations, Catégories (multi-colonnes) + 2 Grandes Cartes Apps (Mobile 200 pts & Windows)
+       - Barre inférieure : Réseaux sociaux (Telegram, WhatsApp, Instagram, X, Facebook, Pinterest, Threads, Discord) + Copyright
+       ========================================================================== -->
+      <footer class="sports-footer">
+        <div class="sports-footer-container">
+
+          <!-- Ligne 1 : Support & Contacts Rapides -->
+          <div class="footer-top-cards-row">
+            <!-- Carte Assistance 24/7 -->
+            <div class="footer-help-card">
+              <div class="help-card-text">
+                <div class="help-badge-row">
+                  <span class="help-title">Assistance</span>
+                  <span class="help-status-pill">24/7</span>
+                </div>
+                <p class="help-desc">Contactez-nous si vous avez encore des questions</p>
+              </div>
+              <div class="help-agent-avatar-wrap">
+                <img src="/images/footer/support-agent.jpg" alt="Conseillère Support FASTSporty"
+                  class="help-agent-img" />
+                <div class="agent-pulse-ring"></div>
+              </div>
+              <button class="btn-contact-support" data-action="open-support"
+                onclick="alert('Support FASTSporty en direct disponible 24/7 par chat instantané !');">
+                <span>Contacter le support</span>
+              </button>
+            </div>
+
+            <!-- Carte Offres Commerciales -->
+            <div class="footer-info-card">
+              <span class="info-card-label">Offres commerciales</span>
+              <a href="mailto:business@fastsporty.ai" class="info-card-value">business@fastsporty.ai</a>
+            </div>
+
+            <!-- Carte Programme Partenaire -->
+            <div class="footer-info-card">
+              <span class="info-card-label">Programme partenaire</span>
+              <a href="mailto:partners@fastsporty.ai" class="info-card-value">partners@fastsporty.ai</a>
+            </div>
           </div>
 
-          <!-- Submit Button -->
-          <button type="submit" class="btn-submit-auth" id="auth-submit-btn">
-            <span id="auth-submit-text">Se connecter →</span>
-          </button>
-        </form>
+          <!-- Ligne 2 : Navigation & 2 Bannières d'Applications -->
+          <div class="footer-mid-grid">
 
-        <!-- Divider -->
-        <div class="auth-divider-row">
-          <span>ou</span>
+            <!-- Navigation Links -->
+            <div class="footer-nav-columns">
+              <!-- Col 1 : Informations -->
+              <div class="footer-nav-col">
+                <h5 class="footer-col-heading">Informations</h5>
+                <ul class="footer-links-list">
+                  <li><a href="#faq-section">Règles</a></li>
+                  <li><a href="#pricing-section">Promotions</a></li>
+                  <li><a href="#pricing-section">Programme partenaire</a></li>
+                </ul>
+              </div>
+
+              <!-- Col 2 & 3 & 4 : Catégories -->
+              <div class="footer-nav-col wide-categories-col">
+                <h5 class="footer-col-heading">Catégories</h5>
+                <div class="categories-subgrid">
+                  <ul class="footer-links-list">
+                    <li><a href="#live-matches-section">Analyses du jour</a></li>
+                    <li><a href="#coupons-section">Coupons SAFE &amp; FUN</a></li>
+                    <li><a href="#coupons-section">Montante &amp; Paliers</a></li>
+                    <li><a href="#pricing-section">Formules d'Abonnement</a></li>
+                  </ul>
+                  <ul class="footer-links-list">
+                    <li><a href="#coupons-section">Scores Exacts &amp; Premium</a></li>
+                    <li><a href="#transparency-section">Bilan Certifié</a></li>
+                    <li><a href="#match-analysis-section">Choc H2H Européen</a></li>
+                    <li><a href="#faq-section">Centre d'aide &amp; FAQ</a></li>
+                  </ul>
+                  <ul class="footer-links-list">
+                    <li><a href="#live-tracking-section">Suivi Algorithme Live</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 Cartes Bannières d'Applications (Mobile & Windows) -->
+            <div class="footer-apps-banners">
+              <!-- Bannière 1 : Application Mobile (Android & iOS) -->
+              <div class="app-banner-card banner-mobile">
+                <div class="banner-content">
+                  <h4 class="banner-title">200 Points pour l'installation de l'application</h4>
+                  <p class="banner-subtitle">Disponible pour Android et iOS</p>
+                  <button class="btn-banner-install" data-app="mobile"
+                    onclick="alert('Lien de téléchargement FASTSporty Mobile (iOS / Android) envoyé sur votre appareil !');">
+                    <span>Installer</span>
+                  </button>
+                </div>
+                <div class="banner-media-wrap">
+                  <img src="/images/footer/app-mobile.jpg" alt="Application FASTSporty Mobile & Cadeaux"
+                    class="banner-illustration" />
+                </div>
+              </div>
+
+              <!-- Bannière 2 : Application Windows -->
+              <div class="app-banner-card banner-windows">
+                <div class="banner-content">
+                  <h4 class="banner-title">Application pour Windows</h4>
+                  <button class="btn-banner-install" data-app="windows"
+                    onclick="alert('Téléchargement du client FASTSporty Desktop pour Windows démarré !');">
+                    <i class="ph-bold ph-windows-logo"></i>
+                    <span>Installer</span>
+                  </button>
+                </div>
+                <div class="banner-media-wrap">
+                  <img src="/images/footer/app-windows.jpg" alt="FASTSporty pour Windows PC"
+                    class="banner-illustration" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Ligne 3 : Barre Réseaux Sociaux & Mentions -->
+          <div class="footer-bottom-bar">
+            <div class="footer-social-row">
+              <a href="#" class="social-sq-btn" title="Discord" onclick="event.preventDefault();">
+                <i class="ph-bold ph-discord-logo"></i>
+              </a>
+              <a href="#" class="social-sq-btn" title="WhatsApp" onclick="event.preventDefault();">
+                <i class="ph-bold ph-whatsapp-logo"></i>
+              </a>
+              <a href="#" class="social-sq-btn" title="Instagram" onclick="event.preventDefault();">
+                <i class="ph-bold ph-instagram-logo"></i>
+              </a>
+              <a href="#" class="social-sq-btn" title="X (Twitter)" onclick="event.preventDefault();">
+                <i class="ph-bold ph-x-logo"></i>
+              </a>
+              <a href="#" class="social-sq-btn" title="Facebook" onclick="event.preventDefault();">
+                <i class="ph-bold ph-facebook-logo"></i>
+              </a>
+              <a href="#" class="social-sq-btn" title="Pinterest" onclick="event.preventDefault();">
+                <i class="ph-bold ph-pinterest-logo"></i>
+              </a>
+              <a href="#" class="social-sq-btn" title="Threads" onclick="event.preventDefault();">
+                <i class="ph-bold ph-threads-logo"></i>
+              </a>
+              <a href="#" class="social-sq-btn" title="Discord" onclick="event.preventDefault();">
+                <i class="ph-bold ph-discord-logo"></i>
+              </a>
+            </div>
+
+            <div class="footer-legal-copy">
+              <span>🔞 18+ • Les pronostics sont indicatifs, aucun gain n'est garanti. FASTSporty AI est un service de prédictions et d'analyse algorithmique.</span>
+              <span>© 2026 FASTSporty AI. Tous droits réservés.</span>
+            </div>
+          </div>
+
         </div>
-
-        <!-- Social Buttons -->
-        <div class="social-buttons-row">
-          <button class="btn-social" id="btn-auth-google" type="button">
-            <!-- Google G Logo -->
-            <svg width="16" height="16" viewBox="0 0 24 24">
-              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
-              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
-            </svg>
-            <span>Continuer avec Google</span>
-          </button>
-
-          <button class="btn-social" id="btn-auth-apple" type="button">
-            <!-- Apple Logo -->
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffffff">
-              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.85-.9.04-2 .6-2.63 1.34-.56.64-.99 1.72-.88 2.74 1.01.08 2.01-.51 2.59-1.23"/>
-            </svg>
-            <span>Continuer avec Apple</span>
-          </button>
-        </div>
-
-        <!-- Switch mode link -->
-        <div class="auth-bottom-text">
-          <span id="auth-switch-link">Pas encore membre ? <a href="#">Créer un compte</a></span>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Toast Notification Container -->
-  <div class="toast-container" id="toast-container"></div>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 14px;">
-      <div class="brand-logo-text" style="font-size: 22px;">
-        <span class="brand-fast">FAST</span><span class="brand-sporty">Sporty</span><span class="brand-ai">AI</span>
-      </div>
-      <p style="max-width: 600px; line-height: 1.5; font-size: 12px;">
-        FASTSporty AI est un service d'analyse algorithmique et de conseils sportifs. Les jeux d'argent comportent des risques d'endettement et de dépendance. Jouez de manière responsable.
-      </p>
-      <div style="font-size: 11px; color: #64748b;">
-        © 2026 FASTSporty AI Technologies. Tous droits réservés.
-      </div>
-    </div>
-  </footer>
+      </footer>
+    </div><!-- End #app-main-area -->
+  </div><!-- End #app-layout -->
 
   <!-- Scripts -->
   <script type="module" src="./src/main.js"></script>
 </body>
+
 </html>

@@ -27,7 +27,7 @@ export function initBetSlipWidget(showToast) {
             <span class="slip-badge">TICKET EN COURS</span>
             <span class="slip-count">${selections.length} sélection${selections.length > 1 ? 's' : ''}</span>
           </div>
-          <button class="slip-close-btn" id="slip-close-btn" title="Fermer">✕</button>
+          <button class="slip-close-btn" id="slip-close-btn" title="Fermer"><i class="ph-bold ph-x"></i></button>
         </div>
 
         <!-- Selections List -->
@@ -40,7 +40,7 @@ export function initBetSlipWidget(showToast) {
               </div>
               <div class="slip-item-odd">
                 <span>@${item.odd.toFixed(2)}</span>
-                <button class="slip-item-remove" data-idx="${idx}" title="Supprimer">✕</button>
+                <button class="slip-item-remove" data-idx="${idx}" title="Supprimer"><i class="ph-bold ph-x"></i></button>
               </div>
             </div>
           `).join("")}
@@ -70,10 +70,10 @@ export function initBetSlipWidget(showToast) {
 
           <div class="slip-actions">
             <button class="btn-copy-code" id="slip-copy-btn">
-              <span>📋 Copier le Code 1xBet</span>
+              <span><i class="ph-bold ph-copy"></i> Copier le Code 1xBet</span>
             </button>
             <button class="btn-neon-primary" id="slip-validate-btn" style="flex: 1; justify-content: center; padding: 10px;">
-              <span>⚡ Encaisser</span>
+              <span><i class="ph-bold ph-lightning"></i> Encaisser</span>
             </button>
           </div>
         </div>

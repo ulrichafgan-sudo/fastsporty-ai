@@ -10,7 +10,7 @@ export function initMatchCarousel(matches) {
   track.innerHTML = matches.map(match => `
     <div class="match-card" data-match-id="${match.id}">
       <div class="match-league-bar">
-        <span>🏆 ${match.league}</span>
+        <span><i class="ph-bold ph-trophy"></i> ${match.league}</span>
         <span style="color: var(--c-violet-light); font-weight: 600;">${match.time}</span>
       </div>
 
@@ -44,7 +44,7 @@ export function initMatchCarousel(matches) {
       </div>
 
       <div class="ai-recommendation-bar">
-        <span class="ai-tip-text">⚡ Conseil IA : <strong>${match.aiTip}</strong></span>
+        <span class="ai-tip-text"><i class="ph-bold ph-lightning"></i> Conseil IA : <strong>${match.aiTip}</strong></span>
         <span class="ai-conf-badge">${match.aiProb} Conf.</span>
       </div>
     </div>
